@@ -1,0 +1,48 @@
+Imperatív programozás 1. gyakorlat
+
+
+Alap Linux parancsok: mkdir, cd, pwd, ls, mv, rm, cp
+
+1. Írja meg C-ben a Hello World programot.
+
+2. Írjon C programot amely, bekér 2 egész számot és visszaírja az összegüket.
+
+3.
+(a) Írjon C programot amely, bekér 2 egész számot és elosztja õket.
+(b) Módosítsa a programot úgy, hogy képes legyen lebegõpontos számok kezelésére,
+valamint védje ki a nullával való osztást.
+
+4. Írjon C programot amely, amely bekér 2 lebegõpontos számot és egy mûveleti jelet
+(+, -, *, /) majd a kívánt mûveletet elvégzi.
+
+5. Írjon C programot, amely 10-tõl visszaszámol 1-ig.
+
+6. Jelenítse meg számok sorozatát az ábrán látható módon n-ig.
+
+1
+22
+333
+4444
+55555
+...
+
+7. Írjon C programot, amely táblázatos formában a °C = (5/9) * (°F - 32) képlet alapján
+írja ki az összetartozó °F- és °C-fokban mért hõmérsékletet.
+
+8. Adott intervallumból írjuk ki a 7-tel vagy 11-gyel osztható egész számokat.
+
+9. Számolja ki az elsõ n pozitív egész szám összegét.
+
+10. Keresse meg a legnagyobb olyan 2003-nál kisebb egész számot, amely 123-mal osztható.
+
+
+gyakorló feladatok
+
+1. Írjon C programot, amely kiszámolja n faktoriálisát.
+
+2. Jelenítsen meg a képernyõn adott méretû szorzótáblát.
+
+3. Számítsa ki a h = 1 + 1/2 + 1/3 + ... + 1/n sor összegét.
+
+
+
