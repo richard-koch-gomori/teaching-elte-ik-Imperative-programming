@@ -1,0 +1,61 @@
+Imperatív programozás 2. gyakorlat
+
+
+1. Írjon C programot amely, bekér 5 lebegõpontos számot, tömbben tárolja õket, majd
+kiszámolja a számok átlagát.
+
+2. Írjon C programot amely, amely beolvassa a felhasználó nevét, majd üdvözlõ üzenet
+keretében visszaírja a képernyõre.
+
+3.
+(a) Készítse el a véletlenszám játékot (Random Guessing Game). A program véletlenszerenûen
+kiválaszt egy nyerõszámot 1 és 100 között, a felhasználó pedig tippelhet. A beírt tiprrõl
+mondja meg, hogy kevés vagy sok a nyerõszámhoz képest!
+(b) Készítse el a játék azon változatát, amikor a nyerõszámok intervalluma nem 1;100, hanem
+a program forráskódjában rögzített konstans.
+(c) Készítse el a játék azon változatát, amikor a nyerõszámok intervalluma nem 1;100, hanem
+a program induláskor megkérdezi a számok alsó és felsõ határát.
+
+4. Olvasson be a billentyûzetrõl egy szöveget, majd készítsen statisztikát a szövegben
+elõforduló magánhangzókról.
+
+5. Olvassa be a háromszög három oldalának adatait és ellenõrizze a háromszög
+szerkeszthetõségét (bármely két oldal összegének nagyobbnak kell lennie a harmadik
+oldalnál). Számolja ki a háromszög kerületét és területét (Heron-képlet).
+
+6. Írjon olyan C függvényt, amely a paraméterként átadott n pozitív számról eldönti, hogy
+prímszám-e. A függvény visszatérési értéke 1 prímszám esetén, illetve 0, ha a szám nem prímszám.
+
+7. Készítsen lebegõpontos alapú, egész kitevõjû hatványozó C függvényt.
+
+8. Készítsen a Newton-approximáció alapján n-edik gyökvonásra használható C függvényt.
+
+x(k + 1) = (1/n) * ((n - 1) * x(k) + A/((x(k))^(n - 1))
+
+A formulában k a sorozat indexe, n a gyökkitevõ, A a gyökvonás argumentuma.
+
+9. Készítsen C függvényt, amely a paraméterben átadott karaktert nagybetûssé alakítja.
+
+10. Olvasson be egy mondatot, amely ponttal (.) végzõdik. Írasson ki minden szót külön sorba.
+A szavak között egy vagy több szóköz is lehet.
+
+11. Írjon programot, amely beolvas egy mondatot.
+Például: Ma szep az ido.
+Visszaírja: Mava szevep avaz ividovo.
+Tehát magánhangzó esetén v betûvel megismétli a magánhangzót.
+
+
+gyakorló feladatok
+
+1. Készítsen programot, amely n darab elem szórását számolja ki.
+
+2. Készítsen C függvényt, amely a paraméterben átadott karaktert kisbetûssé alakítja.
+
+3. Írjon C függvényeket, amelyek maghatározzák a paraméterként kapott n-hez legközelebbi
+négyzetszámot/prímszámot.
+
+4. Keressük meg az elsõ n-nél nagyobb prímet.
+
+5. Olvassunk be egy sztringet és egy karaktert. Számoljuk meg, hány olyan szó van
+a mondatban, amely az adott karakterre végzõdik.
+
