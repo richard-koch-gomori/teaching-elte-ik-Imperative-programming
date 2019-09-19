@@ -23,7 +23,7 @@ printf("%i", str2[5]); // 0-át ír ki ('\0' értéke valójában a 0 egész szám)
 int main()
 {
     char str[64];
-    printf("Ãrja be a nevÃ©t: ");
+    printf("Írja be a nevét: ");
     // ha karaktertömböt olvasunk be, akkor a scanf()-nek átadva kivételesen nem kell
     // a & operátort a tömb neve elé írni (késõbb megtanuljuk, h miért nem)
     //scanf("%s", str);

@@ -4,23 +4,23 @@
 #include <math.h>
 
 
-/* sajÃ¡t fÃ¼ggvÃ©ny kÃ©szÃ­tÃ©se
+/* saját függvény készítése
 
-visszatÃ©rÃ©si_tÃ­pus fÃ¼ggvÃ©ny_neve(paramÃ©terlista)
+visszatérési_típus függvény_neve(paraméterlista)
 {
-    utasÃ­tÃ¡sok
+    utasítások
 }
 
 */
 
-// is_prima() eldÃ¶nti a paramÃ©terkÃ©nt kapott szÃ¡mrÃ³l
-// h prÃ­mszÃ¡m-e (elég esetlen, de mûködik, késõbb írunk egy jobbat)
-// visszatÃ©rÃ©si Ã©rtÃ©k: 0: nem prÃ­mszÃ¡m, 1: prÃ­mszÃ¡m
+// is_prime() eldönti a paraméterként kapott számról
+// h prímszám-e (elég esetlen megoldás, de mûködik, késõbb írunk egy jobbat)
+// visszatérési érték: 0: nem prímszám, 1: prímszám
 int is_prime(int a)
 {
     if (a == 1 || a == 0) // a 0, 1, 2 számokra nem adna helyes eredményt a ciklus
     {
-        return 0; // a fv viszaatÃ©rÃ©si Ã©rtÃ©két hatÃ¡rozza meg
+        return 0; // a fv viszaatérési értékét határozza meg
     }
     if (a == 2)
     {
@@ -55,23 +55,23 @@ int is_prime(int a)
 int main()
 {
     int a;
-    printf("Ãrjon egy szÃ¡mot: ");
+    printf("Írjon egy számot: ");
     scanf("%i", &a);
     if (is_prime(a) == 0)
     {
-        printf("Nem prÃ­mszÃ¡m\n");
+        printf("Nem prímszám\n");
     }
     else
     {
-        printf("PrÃ­mszÃ¡m\n");
+        printf("Prímszám\n");
     }
     if (is_prime(23) == 1)
     {
-        printf("A 23 prÃ­mszÃ¡m\n");
+        printf("A 23 prímszám\n");
     }
     if (is_prime(2) == 1)
     {
-        printf("A 2 prÃ­mszÃ¡m\n");
+        printf("A 2 prímszám\n");
     }
 
     return 0;

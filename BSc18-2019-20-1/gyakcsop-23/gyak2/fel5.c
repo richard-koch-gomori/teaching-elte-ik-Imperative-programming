@@ -1,4 +1,4 @@
-// fordítskor meg kell adni a -lm kapcsolót, hogy a gcc
+// fordításkor meg kell adni a -lm kapcsolót, hogy a gcc
 // linkelni tudjon a math library-vel
 
 // fordítás: gcc fel5.c -o fel5.out -lm
@@ -11,21 +11,21 @@
 int main()
 {
     float a, b, c;
-    printf("Ãrjon be egy oldalt: ");
+    printf("Írjon be egy oldalt: ");
     scanf("%f", &a);
-    printf("Ãrjon be egy oldalt: ");
+    printf("Írjon be egy oldalt: ");
     scanf("%f", &b);
-    printf("Ãrjon be egy oldalt: ");
+    printf("Írjon be egy oldalt: ");
     scanf("%f", &c);
     if (a + b > c && a + c > b && b + c > a)
     {
         float s = (a + b + c) / 2;
         float t = sqrt(s * (s - a) * (s - b) * (s - c));
-        printf("TerÃ¼let: %f \n", t);
+        printf("Terület: %f \n", t);
     }
     else
     {
-        printf("A hÃ¡romszÃ¶g nem lÃ©tezik");
+        printf("A háromszög nem létezik");
     }
 
     return 0;

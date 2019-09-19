@@ -8,7 +8,7 @@ int main()
     char str[256];
     // miért éppen 256? ez a program csak olyan inputot képes kezelni, amelynek a
     // max mérete 256 - 1 azaz 255; másik tantárgy feladata lesz ezt kiküszöbölni
-    printf("Ãrjon be egy szÃ¶veget: ");
+    printf("Írjon be egy szöveget: ");
     gets(str);
     int count_a, count_e, count_i, count_o, count_u;
     count_a = 0; // ha nem inicializálnánk, memóriaszemét lenne a változóban

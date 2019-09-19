@@ -34,18 +34,18 @@ int main()
     int choice = 0;
     while (choice != win) // a ciklus vezérlése nem az igazi, késõbb írunk egy jobbat
     {
-        printf("Ãrjon be egy tippet: ");
+        printf("Írjon be egy tippet: ");
         scanf("%i", &choice);
         if (choice > win)
         {
-            printf("TÃºl nagy.\n");
+            printf("Túl nagy.\n");
         }
         if (choice < win)
         {
-            printf("TÃºl kicsi.\n");
+            printf("Túl kicsi.\n");
         }
     }
-    printf("EltalÃ¡lta.\n");
+    printf("Eltalálta.\n");
 
     return 0;
 }
