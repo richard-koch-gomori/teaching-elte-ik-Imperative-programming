@@ -9,8 +9,8 @@ int main()
 	// ar arr tömböt nem inicializáltuk
 	for (int i = 0; i < 100; i++)
     {
-		printf("%i\n", arr[i]);	// néhányszor különbözõ nagyságrendû számokat fog kiírni
-	}
+        printf("%i\n", arr[i]);    // néhányszor különbözõ nagyságrendû számokat fog kiírni
+    }
 
-	return 0;
+    return 0;
 }
