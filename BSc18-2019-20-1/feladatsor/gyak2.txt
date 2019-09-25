@@ -34,7 +34,7 @@ x(k + 1) = (1/n) * ((n - 1) * x(k) + A/((x(k))^(n - 1))
 
 A formulában k a sorozat indexe, n a gyökkitevõ, A a gyökvonás argumentuma.
 
-9. Készítsen C függvényt, amely a paraméterben átadott karaktert nagybetûssé alakítja.
+9. Készítsen C függvényt, amely a paraméterben átadott karaktert kisbetûssé alakítja.
 
 10. Olvasson be egy mondatot, amely ponttal (.) végzõdik. Írasson ki minden szót külön sorba.
 A szavak között egy vagy több szóköz is lehet.
@@ -49,7 +49,7 @@ gyakorló feladatok
 
 1. Készítsen programot, amely n darab elem szórását számolja ki.
 
-2. Készítsen C függvényt, amely a paraméterben átadott karaktert kisbetûssé alakítja.
+2. Készítsen C függvényt, amely a paraméterben átadott karaktert nagybetûssé alakítja.
 
 3. Írjon C függvényeket, amelyek maghatározzák a paraméterként kapott n-hez legközelebbi
 négyzetszámot/prímszámot.
