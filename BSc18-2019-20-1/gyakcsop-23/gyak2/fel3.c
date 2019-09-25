@@ -38,11 +38,11 @@ int main()
         scanf("%i", &choice);
         if (choice > win)
         {
-            printf("Túl nagy.\n");
+            printf("A tipp túl nagy.\n");
         }
         if (choice < win)
         {
-            printf("Túl kicsi.\n");
+            printf("A tipp túl kicsi.\n");
         }
     }
     printf("Eltalálta.\n");
