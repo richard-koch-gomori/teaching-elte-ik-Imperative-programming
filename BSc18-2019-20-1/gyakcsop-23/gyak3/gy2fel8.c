@@ -10,7 +10,7 @@ float nthroot(float A, int n, int x)
     s[0] = 1;
     // miért pont 64?
     // ez így nem szép, késõbb megnézzük hogy lehet ezt szépen megcsinálni
-    if (x > 64)
+    if (x >= 64)
     {
         return 0;
     }
