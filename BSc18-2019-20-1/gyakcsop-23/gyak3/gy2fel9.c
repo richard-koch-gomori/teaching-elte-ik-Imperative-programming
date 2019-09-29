@@ -5,7 +5,7 @@
 /*
 'A' értéke valójában egy egész szám (65), az A sorszáma az ASCII kódtáblában
 a táblában minden kisbetû-nagybetû pár között a különbség ugyanannyi,
-* ez pedig éppen 32, ami úgy jön ki hogy: 'a' - 'A'
+ez pedig éppen 32, ami úgy jön ki hogy: 'a' - 'A'
 */
 
 char lower(char ch)

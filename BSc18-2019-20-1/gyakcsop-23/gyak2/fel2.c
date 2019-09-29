@@ -29,7 +29,7 @@ int main()
     //scanf("%s", str);
 
     // a billentyûzetrõl szöveg beolvasása az str tömbbe
-    // a gets() család elavult, késõbb getline().t fogunk használni
+    // a gets() család elavult, késõbb getline()-t fogunk használni
     gets(str);
 
     printf("Hello, %s\n", str);

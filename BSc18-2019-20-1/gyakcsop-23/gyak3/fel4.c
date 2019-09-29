@@ -12,7 +12,7 @@ int logsearch(int arr[], int size, int element)
 {
     int low = 0; // low jelenti a vizsgált részintervallum elsõ elemének indexét
     int high = size - 1; // high jelenti a vizsgált részintervallum utolsó elemének indexét
-    int middle; // midle minden lépésben a vizsgált intervallum középsõ elemének indexe
+    int middle; // middle minden lépésben a vizsgált intervallum középsõ elemének indexe
     while (low < high) // high - low + 1 > 0 is jó lenne (az intervallum hossza nagyobb mint 0)
     {
         middle = (low + high) / 2;
