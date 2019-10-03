@@ -1,4 +1,4 @@
-// fordítás:  gcc std_declarations.c -o std_declarations.out -std=c99
+// fordítás:  gcc std_declarations.c -o std_declarations.out -std=c99 --pedantic-errors
 
 
 #include <stdio.h>

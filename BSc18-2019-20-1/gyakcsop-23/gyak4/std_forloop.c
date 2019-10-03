@@ -1,4 +1,4 @@
-// fordítás: gcc std_forloop.c -o std_forloop.out -std=c99
+// fordítás: gcc std_forloop.c -o std_forloop.out -std=c99 --pedantic-errors
 
 
 #include <stdio.h>
