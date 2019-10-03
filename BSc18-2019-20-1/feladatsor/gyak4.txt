@@ -1,0 +1,73 @@
+Imperatív programozás 4. gyakorlat
+
+
+1-5. gyak3.txt: feladatok önálló megoldásra (összefoglalás)
+
+6. Készítsen fel6.c néven fordítási egységet, amiben meghívja a func.c
+fordítási egységben definiált void foo(int) függvényt.
+
+jegyzet
+
+1. C szabvány:
+Leírja teljes technikai részleteiben a C nyelvet; az Amerikai Szabványügyi Hivatal
+adja ki.
+
+https://en.wikipedia.org/wiki/ANSI_C
+
+a gcc-nek a -std=(szabvány) kapcsolóval lehet megadni, milyen szabvánnyal fordítson
+pl -std=c90 esetén az inputfájlt a C90-es szabvány szerint fogja értelmezni
+a Zh-n C99 az elvárás (-std=c99)
+
+az egyes szabványok közti eltérések más gcc outputot adhatnak ugyanarra az
+inputfájlra, ld std_declarations.c, std_forloop.c
+
+az megint más kérdés, hogy a fordítók mennyire követik a szabványokat,
+ld std_nestedfunctions.c
+
+nem minden szabványtól való eltérésre ad hibaüzenetet a gcc
+a --pedantic-errors kapcsolóval érhetjük el, hogy az összes szabványtól eltérést
+hibaként kezeljen a gcc
+
+
+
+használt gcc kapcsolók
+
+gcc [inputfiles...] -o outputfilename
+
+--help
+help
+
+--help=kategória
+kiírja a kategóriába tartozó parancsokat
+
+-o [file]
+outputfájl nevének megadása
+
+-std=(szabvány)
+a gcc a megadott szabvánnyal fordítson
+
+-c
+a gcc nem linkel, csak fordít
+
+-v
+kiírja a képernyõre, hogy a gcc mit csinál a háttérben
+(cc1 és ld paraméterezése etc)
+
+-S
+nem fordít, csak Assembly kóddá alakítja az inputot
+
+-lm
+azért kell, h a gcc linkelni tudjon a math.h függvénykönyvtárral
+
+--pedantic-errors
+szabványtól eltéréseket hibaként kezeljen a gcc
+
+-Wall
+a legtöbb figyelemzetés (warning) megjelenítése
+
+-Wextra
+még több figyelmeztetés (warning) megjelenítése
+
+
+2. fordítási egységek külön fordítása: ld fel6/build.txt
+
