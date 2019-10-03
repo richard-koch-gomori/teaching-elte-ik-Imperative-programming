@@ -12,7 +12,7 @@ int foo()
 
     // se C90-nel, se C99-cel nem fordul, viszont -std kapcsoló nélkül lefordul
     // a szabvány nem definiálja a beágyazott függvényeket, ettõl még a
-        // gcc ismeri és alapértelmezés szerint elfogadja
+    // gcc ismeri és alapértelmezés szerint elfogadja
     // romlik a kód hordozhatósága
     */
     int foo2() { return 2; }
