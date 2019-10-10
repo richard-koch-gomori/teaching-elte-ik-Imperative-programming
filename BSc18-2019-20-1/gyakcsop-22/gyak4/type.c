@@ -9,8 +9,8 @@ int main()
     int y = 3000000000;
     int z = x + y;
     printf("%i\n", z);
-    long long int xl = 2000000000;
-    long long int yl = 3000000000;
+    long long int xl = 2000000000ll;
+    long long int yl = 3000000000ll;
     long long int zl = xl + yl;
     printf("%lli\n", zl);
 }
