@@ -1,0 +1,89 @@
+Imperatív programozás 6. gyakorlat
+
+
+1. Írjon C programot, amelyben definiál és inicializál egy double, int és char
+típusú változót. Ezután definiáljon és inicializáljon három pointer-t, amelyek
+az elõbb létrehozott változóra mutatnak. Írja ki a képernyõre a változók
+(összesen 6 változó) memóriacímét, tartalmát és méretét (bájtokban).
+
+2. Egészítse ki a következõ kódot a kommentben megadott feladatokkal.
+
+#include <stdio.h>
+
+
+void foo(int x)
+{
+    // Írja ki itt x memóriacímét és értékét
+    //...
+}
+
+
+int main()
+{
+    foo(7);
+
+    int var = 10;
+
+    // Írja ki itt var memóriacímét és értékét
+    //...
+
+    foo(var);
+    return 0;
+}
+
+Mit tapasztal? Mi a jelenség oka?
+
+
+3. Írjon foo() C függvényt, amely egy egészeket tartalmazó tömböt fogad
+paraméterként. A függvény számolja meg, hogy a tömbben hány darab pozitív,
+negatív illetve nulla szám van. A kapott eredményeket paraméterben adja
+vissza.
+
+4. Írjon int változókat felcserélõ C függvényt.
+
+5. Írjon int változókra mutató pointer-eket felcserélõ C függvényt.
+
+6. Mit ír ki a következõ C kód?
+
+int var1 = 1;
+int var2 = 2;
+int var3 = 3;
+int* ptr;
+ptr = &var2;
+
+printf("%i\n", *ptr);
+
+ptr = ptr - 1;
+printf("%i\n", *ptr);
+
+ptr = ptr + 2;
+printf("%i\n", *ptr);
+
+ptr = ptr + 1;
+printf("%i\n", *ptr);
+
+ptr = ptr + 100000;
+printf("%i\n", *ptr);
+
+
+7. Írjon C programot, amelyben tárol egy konstans karaktersorozatot. Írja ki
+a képernyõre a sztring elejérõl az elsõ szóköztõl eltérõ karaktert.
+
+8. Írjon C függvényt, amely paraméterként egy char* pointer-t fogad, és visszatér
+annak a sztringnek a hosszával, amire a pointer mutat. Hívja meg a függvényt
+sztringliterállal, tömbben tárolt karaktersorozattal és char* pointer-rel.
+
+9. Tekintsük a következõ C definíciót:
+
+char* pointer = "alfa";
+
+Értelmezzük a
+
+*pointer++
+*(pointer++)
+(*pointer)++
+++(*pointer)
+
+kifejezéseket. Hogyan változik a kifejezések értelmezése, ha a pointer nem egy
+sztringliterálra, hanem egy char tömb elsõ elemére mutat?
+
