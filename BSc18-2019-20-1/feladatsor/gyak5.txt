@@ -43,8 +43,9 @@ legelsõ olyan indexével, ahol a tmp[] sztring bármelyik karaktere elõfordul.
 8. Írjon függvényt, amely a paraméterként kapott egész számot sztringgé alakítja,
 az eredménysztringet paraméterben adja vissza.
 
-9. Írjon függvényt, amely az [a..f] alakú rövidítéseket oldja fel a paraméterben kapott
-sztringben ([a..f]-et kicseréli [abcdef]-re).
+9. Írjon függvényt, amely az a-f alakú rövidítéseket oldja fel a paraméterben kapott
+sztringben (a-f -et kicseréli abcdef -re). Feltehetõ, hogy a sztringben a kötõjel (-)
+csak rövidítés megadása miatt szerepel, és hogy minden rövidítés helyesen van megadva.
 
 10. Írjon függvényt, amely a paraméterként kapott tízes számrendszerbeli egész számot
 átváltja tetszõleges (paraméterként kapott) alapú számrendszerbe.
