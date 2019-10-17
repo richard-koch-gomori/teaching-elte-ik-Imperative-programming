@@ -1,0 +1,23 @@
+1. Mi a végeredmény típusa C-ben?
+
+3.0 + 2*3
+
+(A) int
+(B) long int
+(C) float
+(D) double
+
+megoldás: D
+
+2. Melyik deklarációnak felel meg a következõ?
+
+egy függvény, amely nem ad vissza értéket és paraméterként fogad
+egy karaktert valamint egy elõjel nélküli egészt
+
+(A) void foo(char str[], unsigned int i) {}
+(B) void foo(char ch, unsigned int i) {}
+(C) int foo(char str[], unsigned int i) {}
+(D) int foo(char ch, unsigned int i) {}
+
+megoldás: B
+
