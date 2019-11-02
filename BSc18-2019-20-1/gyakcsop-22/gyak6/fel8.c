@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-int length(char ptr)
+int length(char* ptr)
 {
     int res = 0;
     for (; *ptr != '\0'; ptr = ptr + 1)
