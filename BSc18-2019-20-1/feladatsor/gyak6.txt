@@ -87,3 +87,6 @@ char* pointer = "alfa";
 kifejezéseket. Hogyan változik a kifejezések értelmezése, ha a pointer nem egy
 sztringliterálra, hanem egy char tömb elsõ elemére mutat?
 
+10. Hasonlítsuk össze a 6. feladatsor 8. feladatának (pointer-es) megoldását
+a korábbi, ugyanezen feladatot megoldó tömbös megoldással.
+
