@@ -1,0 +1,34 @@
+Imperatív programozás 7. gyakorlat
+
+
+1.
+(a) Foglaljon le a heap-en 100 bájtnyi területet. Tároljon a lefoglalt
+területen egy int, double és karaktertömb típusú értéket.
+
+(b) Tárolja a heap-en a 3906, short int típusú adatot. Mi lesz az eredmény,
+ha az adat elsõ bájtját unsigned char típusúként olvassuk?
+A program végén szabadítsa fel a használt memóriaterületeket.
+
+2. Olvasson be a billentyûzetrõl egy darabszámot, majd olvasson be ennyi
+darab double típusú adatot. Írja ki a beolvasott értékek átlagát.
+Tárolja az adatokat a heap-en.
+A program végén szabadítsa fel a használt memóriaterületeket.
+
+
+A 3-6 feladatok függvényeit hívja meg stack-en illetve heap-en
+tárolt adatokkal is.
+
+3. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény a páros számok között maximumot, a páratlan számok
+között minimumot keres. A függvény adja meg a szélsõértékek mutatóját.
+
+4. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja, és megadja a két legnagyobb elem mutatóját.
+
+5. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény döntse el, hogy az egészek között van-e két olyan elem
+amelyek szorzata a paraméterben kapott egész.
+
+6. Írjon C függvényt, amely a paraméterben átadott két sztringrõl eldönti,
+hogy egymás anagrammái-e.
+
