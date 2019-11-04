@@ -45,26 +45,12 @@ vissza.
 
 6. Mit ír ki a következõ C kód?
 
-int var1 = 1;
-int var2 = 2;
-int var3 = 3;
-int* ptr;
-ptr = &var2;
-
-printf("%i\n", *ptr);
-
-ptr = ptr - 1;
-printf("%i\n", *ptr);
-
-ptr = ptr + 2;
-printf("%i\n", *ptr);
-
+char str[] = "Süllyed a harossz";
+char* ptr = &str[5];
 ptr = ptr + 1;
-printf("%i\n", *ptr);
-
-ptr = ptr + 100000;
-printf("%i\n", *ptr);
-
+printf("%c\n", *ptr);
+ptr = ptr - 2;
+printf("%c\n", *ptr);
 
 7. Írjon C programot, amelyben tárol egy konstans karaktersorozatot. Írja ki
 a képernyõre a sztring elejérõl az elsõ szóköztõl eltérõ karaktert.
