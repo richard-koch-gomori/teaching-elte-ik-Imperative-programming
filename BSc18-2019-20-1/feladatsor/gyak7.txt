@@ -19,27 +19,20 @@ majd a heap-en elõállítja a kapott darabszámú, csupa ezen karaktereket
 tartalmazó sztringet. A függvény térjen vissza a sztring elsõ elemére
 mutató pointer-rel. Ki szabadítsa fel a lefoglalt területet?
 
+4. Írjon függvényt, amely paraméterként fogad egy egészre mutató pointer-t
+és egy darabszámot, majd visszatér a legnagyobb elem mutatójával.
+Ha nincs legnagyobb elem, a visszatérési érték legyen NULL.
+Hívja meg a függvényt stack-en illetve heap-en tárolt adatokkal is.
 
-A 4-8 feladatok függvényeit hívja meg stack-en illetve heap-en
-tárolt adatokkal is.
+5.
+(a) Írjon függvényt, amely paraméterként két darab karaterre mutató
+pointer-t fogad, és az elsõ pointer által címzett sztringet a második
+pointer által címzett területre másolja.
+Hívja meg a függvényt stack-en illetve heap-en tárolt adatokkal is.
 
-4. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
-fogadja. A függvény a páros számok között maximumot, a páratlan számok
-között minimumot keres. A függvény adja meg a szélsõértékek mutatóját.
+(b) Tegye biztonságossá az (a)-ban megírt függvényt úgy, hogy kivédi azt,
+ha a célterület nem elég nagy a forrássztring tárolására.
 
-5. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
-fogadja, és megadja a két legnagyobb elem mutatóját.
 
-6. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
-fogadja. A függvény döntse el, hogy az egészek között van-e két olyan elem
-amelyek szorzata a paraméterben kapott egész.
-
-7. Írjon C függvényt, amely a paraméterben átadott két sztringrõl eldönti,
-hogy egymás anagrammái-e.
-
-8. Írjon C függvényt, amely az elsõ paraméterként kapott sztringben
-megkeresi a második paraméterként kapott sztring elsõ elõfordulását.
-A függvény térjen vissza a találat elsõ karakterére mutató pointer-rel.
-Ha a sztring nem található meg a vizsgált sztringben, a visszatérési
-érték legyen NULL.
+mintazh
 
