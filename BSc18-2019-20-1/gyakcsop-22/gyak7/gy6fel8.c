@@ -7,9 +7,7 @@
 int length(char str[]) // a fv fejlécében tömb van
 {
     int idx = 0;
-    for (; str[idx] != '\0'; ++idx) // tömbindexelés
-    {
-    }
+    for (; str[idx] != '\0'; ++idx); // tömbindexelés
     return idx;
 }
 
@@ -18,9 +16,7 @@ int length(char str[]) // a fv fejlécében tömb van
 int length2(char* str) // a fv fejlécében pointer van
 {
     int idx = 0;
-    for (; *(str + idx) != '\0'; ++idx) // pointer aritmetika
-    {
-    }
+    for (; *(str + idx) != '\0'; ++idx); // pointer aritmetika
     return idx;
 }
 
