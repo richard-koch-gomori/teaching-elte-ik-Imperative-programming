@@ -1,0 +1,132 @@
+ELTE IK Imperatív programozás mintavizsga feladatsorok 2018/19/1 félév
+
+
+1. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int a = 7;
+if (a % 3 == 2)
+    printf("result1");
+else
+    printf("result2");
+
+(A) nem fordul
+(B) semmit (üres képernyõ)
+(C) result1
+(D) result2
+
+2. Hány iterációt hajt végre a következõ ciklus (hányszor
+hajtódik végre a printf() függvényhívás)?
+
+int i = 10;
+while (--i > 3)
+    printf("%d", i);
+
+(A) nem fordul
+(B) 0
+(C) 6
+(D) 7
+
+3. Mit ír ki a következõ program?
+
+char msg[] = "CBA";
+printf("%d", msg[3]);
+
+(A) futási hiba: az msg tömbnek 3 eleme van, nem hivatkozhatunk az
+utolsó utáni elemre
+(B) nem definiált viselkedés (undefined behaviour)
+(C) 65
+(D) 0
+
+4. Melyik deklarációnak felel meg a következõ:
+"point" nevû, elõjel nélküli, hosszú egész (long int)
+konstans változóra mutató pointer
+
+(A) const unsigned long int* point;
+(B) const long int* point;
+(C) unsigned long int* const point;
+(D) const signed long int* point;
+
+5. Melyik állítás igaz a következõ program esetén?
+
+int* pointer = (int*)malloc(5000 * sizeof(int));
+
+(A) a heap-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a stack-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(B) a stack-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a heap-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(C) a heap-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a heap-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(D) egyik sem
+
+6. C-ben kiértékelés után mi lesz az 5/10 + 100 kifejezés típusa?
+
+(A) double
+(B) float
+(C) int
+(D) unsigned int
+
+7. Melyik állítás hamis?
+
+(A) C-ben a változók deklarációja nem mindig jár memóriafoglalással
+(B) void x; deklaráció esetén az x változónak tetszõleges
+típusú érték adható
+(C) a main() függvény visszatérési értéke információt ad az
+operációs rendszernek a program sikerességérõl
+(D) a main() függvény paraméterben megkapja a program
+parancssori argumentumait
+
+8. Melyik állítás hamis?
+
+(A) Python-ban az indentálást behúzással adjuk meg
+(B) a Python magas szintû programozási nyelv
+(C) Python-ban a karakterlánc immutable típus
+(D) Python-ban minden változót deklarálni kell a felhasználása elõtt
+
+9. Mit ír ki a következõ Python program?
+
+list = [1, 10]
+print(2 in list)
+
+(A) True
+(B) False
+(C) nem fordul: [2] in list lenne helyes
+(D) nem fordul: nincs in operátor Python-ban
+
+10. Mit jelent a szimultán értékadás Python-ban?
+
+(A) egy utasításban több változó kap különbözõ értéket
+(B) egy utasításban több változó kapja ugyanazt az értéket
+(C) Python-ban nincs szimultán értékadás
+(D) egyik sem a megadottak közül
+
+Programozási feladat
+
+Írjon függvényt egy sztringben az "[a-z]" alakú rövidítések
+feloldására, tehát a sztringben a "[a-z]" helyett "abcde...xyz"
+szerepeljen. Elég az angol ABC betûivel dolgozni.
+
+Például a "This is my [f-o] string"-re a helyes output:
+"This is my fhijklmno string". Vegye figyelembe, hogy egy sztringben
+több rövidítés is lehet, azonban rövidítésen belül nem lehet
+másik rövidítés. Felteheto hogy a [ és ] karakterek csak ezen
+célból fordulnak elõ a sztringben, és mindegyik rövidítés
+helyesen van megadva.
+
+Szemléltesse a függvény mûködését.
+
+Példa input:
+"This is [f-o] to demo [a-z] my [a-b] [b-b] program [b-d]"
+
+Elvárt output:
+"This is fghijklmno to demo abcdefghijklmnopqrstuvwxyz my ab b program bcd"
+
+-------------------------------------------------------------------------------
+
