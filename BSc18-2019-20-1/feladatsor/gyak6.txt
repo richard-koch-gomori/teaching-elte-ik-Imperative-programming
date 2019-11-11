@@ -76,3 +76,9 @@ sztringliterálra, hanem egy char tömb elsõ elemére mutat?
 10. Hasonlítsuk össze a 6. feladatsor 8. feladatának (pointer-es) megoldását
 a korábbi, ugyanezen feladatot megoldó tömbös megoldással.
 
+11. Írjon függvényt, amely paraméterként két darab karaterre mutató pointer-t
+fogad, és az elsõ pointer által címzett sztringet összehasonlítja a második
+pointer által címzett sztringgel. Ha a két sztring különbözõ, a függvény térjen
+vissza az elsõ különbözõ karakter mutatójával az elsõ sztringbõl. Ha a két
+sztring ugyanaz, a visszatérési érték legyen NULL.
+
