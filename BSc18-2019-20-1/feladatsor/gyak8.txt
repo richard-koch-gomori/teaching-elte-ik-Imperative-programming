@@ -1,32 +1,5 @@
-Imperatív programozás 8. gyakorlat
+ImperatÃ­v programozÃ¡s 8. gyakorlat
 
 
-1. Valósítsa meg egész számok láncolt listában tárolását. Írja meg a kiíró
-és beszúró mûveleteket. Másolja le a láncolt listát (deep/shallow).
-
-2. (a) Készítsen foo néven fordítási egységet, benne counter() néven függvényt,
-amely minden híváskor kiírja a képernyõre, hogy éppen hányadik alkalommal
-hívták meg azt a függvényt (globális változóval). (b) Oldja meg, hogy az (a)
-megoldás változója ne látszódjon ki a fordítási egységbõl. (c) Oldja meg az
-(a) feladatot globális változó használata nélkül.
-
-3. Tekintsük a következõ deklarációt:
-
-char* array[5] = {"first", "second", "ABCQB", "fourth", "fifth"};
-
-Mi a következõ kifejezések típusa és eredménye?
-
-array
-*(*array + 1)
-*(*(array + 2) + 3)
-
-4. Írjunk egy month_name(n) függvényt, amely egy, az n-edik hónap nevét tartalmazó
-karaktersorozatot címzõ mutatót ad visszatérési értékként.
-
-5. Írjunk programot, amely a program argumentumaként fogad két pozitív egész számot,
-majd ezzel az intervallumman lejátszatja a felhasználóval a Random Guessing Game-t.
-Ha az argumentumok nem megfelelõek, 1-es hibakóddal termináljon a program.
-
-6. Írjon C függvényt, amely paraméterként kap egy kétdimenziós tömböt, és elõállít egy
-olyan tömböt, amely a sorok átlagát tartalmazza.
+mintazh
 

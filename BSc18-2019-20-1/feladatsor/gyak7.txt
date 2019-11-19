@@ -34,5 +34,3 @@ Hívja meg a függvényt stack-en illetve heap-en tárolt adatokkal is.
 ha a célterület nem elég nagy a forrássztring tárolására.
 
 
-mintazh
-
