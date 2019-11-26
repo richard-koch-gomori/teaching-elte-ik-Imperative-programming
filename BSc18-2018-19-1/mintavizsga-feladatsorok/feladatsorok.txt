@@ -130,3 +130,157 @@ Elvárt output:
 
 -------------------------------------------------------------------------------
 
+2. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int a = -1;
+int b = 4;
+if (a < 0 || b < 0)
+    printf("A");
+else
+    printf("B");
+
+(A) A
+(B) B
+(C) semmit (üres képernyõ)
+(D) nem fordul
+
+2. Mennyi lesz az x változó értéke a következõ program
+futása után?
+
+int x = 20;
+for (; x > 0; x = x - 3);
+
+(A) 1
+(B) 0
+(C) -1
+(D) nem fordul
+
+3. Mit ír ki a következõ program?
+
+printf("%d", 5/2 + 10);
+
+(A) 11
+(B) 12
+(C) 12.5
+(D) nem fordul
+
+4. A felsorolt lehetõségek közül melyik értékadás helyes
+és változtatja meg az x változó értékét 5-re?
+
+int x = 2;
+int* pint = &x;
+int** ppint = &pint;
+
+(A) *ppint = 5
+(B) **ppint = *x + 3
+(C) **ppint = *pint + 3
+(D) egyik sem
+
+5. Mi a hiba a következó C kódban, ha a
+"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0," output-ot szeretnénk?
+
+printf("Counting back from 10 to 0\n\n");
+int idx = 11;
+while (idx != 1)
+{
+    printf("%d, ", idx = idx - 1);
+}
+
+(A) Az idx változó értékét 10-rõl kellene indítani
+(B) Az idx = idx - 1 értékadás nem lehet a printf() argumentuma,
+helyette idx-- kellene
+(C) Az idx = idx - 1 értékadás nem lehet a printf() argumentuma,
+helyette --idx kellene
+(D) A ciklus feltételének idx != 0 vagy idx-nek kellene lennie
+
+6. Melyik deklaráció felel meg a következõnek: egy elõjel
+nélküli, hosszú egész (long int)-eket tartalmazó tömböt
+és egy egész számot fogadó függvény, amely nem tér
+vissza értékkel.
+
+(A) void foo(array of unsigned long int, int size) {}
+(B) void foo(unsigned long int* array, int size) {}
+(C) int foo(unsigned long[], int size) {}
+(D) egyik sem
+
+7. Melyik állítás igaz?
+
+(A) a C alacsonyszintû programozási nyelv
+(B) C-ben a változók deklarációja mindig memóriafoglalással jár
+(C) C-ben minden függvény tér vissza értékkel
+(D) C-ben a függvényparamétereket átvehetjük érték vagy
+referencia szerint is
+
+8. Mit ír ki a következõ Python program?
+
+list = ["hello world", -34, 3.14, 77, 0.1]
+print(list[2:])
+
+(A) szintaktikai hiba: hiányzik az intervallum felsõ határa
+(B) [3.14, 77, 0.1]
+(C) [-34, 3.14, 77, 0.1]
+(D) [3.14]
+
+9. Mit ír ki a következõ Python kód?
+
+x = 1
+y = 2
+
+def function():
+    y = x;
+    print(x)
+    x = 3
+
+function()
+
+(A) 1
+(B) 3
+(C) szintaktikai hiba: x nevû változó már van a programban
+(D) szintaktikai hiba: az x változó function()-ban lokális,
+nem hivatkozhatunk rá az értékadása elõtt
+
+10. Melyik állítás hamis?
+
+(A) C-ben deklarálhatunk függvényt függvényen belül
+(B) C-ben nem definiálhatunk függvényt függvényen belül
+(C) Python-ban a beágyazott függvények láthatósága
+az egész program
+(D) Python-ban a beágyazott függvények láthatósága
+az õt definiáló függvény
+
+Programozási feladat
+
+Írjon függvényt, amely a paraméterként kapott egészeket
+tartalmazó tömbön (Python választás esetén listán) megvalósítja
+a bináris (logaritmikus) keresést.
+
+A logaritmikus keresés egy monoton növekvõen rendezett tömb
+esetén megkeresi valamely adott elem indexét. Az algoritmus
+elõször megfelezi a teljes tömböt, megnézi hogy a középen
+lévõ elem hogyan viszonyul a keresett értékhez. Ha egyenlõ
+vele, készen vagyunk. Ha a középen lévõ elem kisebb mint a
+keresett érték, akkor a keresett elem a megfelezett tömb felsõ
+részében van, máskülönben az alsó részében.
+
+Ezt a mûködést alkalmazzuk a tömb megfelelõ részére.
+Amennyiben a vizsgált rész mérete 0, akkor a keresett érték
+nem szerepel a tömbben, ekkor a visszatérési érték legyen -1.
+
+Mutassa be a függvény mûködését.
+
+Példa input 1:
+[-2, 0, 5, 7, 11, 15, 23], keressük a 15-ös elemet
+
+Elvárt output 1:
+5
+
+Példa input 2:
+[-2, 0, 5, 7, 11, 15, 23], keressük a 16-os elemet
+
+Elvárt output 2:
+-1
+
+-------------------------------------------------------------------------------
+
