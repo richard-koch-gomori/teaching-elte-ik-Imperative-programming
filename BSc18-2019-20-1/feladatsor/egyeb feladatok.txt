@@ -1,0 +1,87 @@
+Egyéb feladatok
+
+
+squeeze2: Az str sztringben törli az összes olyan karaktert, amely tmp-ben megtalálható.
+
+átváltás tetszõleges alapú számrendszerbe
+
+egész szám sztringgé alakítása adott mezõszélességen
+
+sztring elsõ elõfordulása adott sztringben (strindex)
+
+sztring utolsó elõfordulása adott sztringben
+
+sztring valós számmá alakítása (tizedestört alak/normálalak)
+
+
+4. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény a páros számok között maximumot, a páratlan számok
+között minimumot keres. A függvény adja meg a szélsõértékek mutatóját.
+
+5. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja, és megadja a két legnagyobb elem mutatóját.
+
+6. Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény döntse el, hogy az egészek között van-e két olyan elem
+amelyek szorzata a paraméterben kapott egész.
+
+7. Írjon C függvényt, amely a paraméterben átadott két sztringrõl eldönti,
+hogy egymás anagrammái-e.
+
+8. Írjon C függvényt, amely az elsõ paraméterként kapott sztringben
+megkeresi a második paraméterként kapott sztring elsõ elõfordulását.
+A függvény térjen vissza a találat elsõ karakterére mutató pointer-rel.
+Ha a sztring nem található meg a vizsgált sztringben, a visszatérési
+érték legyen NULL.
+
+
+11. Írjon függvényt, amely paraméterként két darab karaterre mutató pointer-t
+fogad, és az elsõ pointer által címzett sztringet összehasonlítja a második
+pointer által címzett sztringgel. Ha a két sztring különbözõ, a függvény térjen
+vissza az elsõ különbözõ karakter mutatójával az elsõ sztringbõl. Ha a két
+sztring ugyanaz, a visszatérési érték legyen NULL.
+
+
+6. Írjunk C makrót két egész szám maximumának meghatározására.
+
+
+
+6. Írjon C függvényt, amely paraméterként kap egy négyzetes mátrixot, és megadja a
+fõátló legnagyobb és legkisebb elemét.
+
+
+1. Készítsen orderednums néven egész számokat tároló rendszert:
+saját függvénykönyvtárat és hozzá tartozó fordítási egységet, amellyel
+egész számokat nagyság szerint növekvõ sorrendben tárolunk a heap-en.
+Írjon függvényeket, amelyek: inicializálja a kezelõ rendszert;
+kiírja a tárolt számokat; beszúr egy új számot; eldönti, hogy egy
+adott szám tárolva van-e; felszabadítja a rendszer által használt
+memóriát.
+
+
+
+2. Mi lesz a következõ deklarációk esetén a változó típusa?
+(szöveges megfogalmazás, C jelölés)
+
+int i;
+int* pi;
+double* pd;
+int arr1[5];
+char arr2[10];
+double matrix[5][7];
+double** ppd;
+double*** pppd;
+const int ci;
+const int* pci;
+int* arr[10];
+int (*parr)[10];
+
+
+
+
+
+7. Írjon C függvényt, amely paraméterben kap egy char* pointer-ek tömbjét és egy
+karaktert, majd a függvény megkeresei a karaktert a tömbben (eredményként adja meg
+a tömb indexét és a sztringbeli indexet is).
+
+
