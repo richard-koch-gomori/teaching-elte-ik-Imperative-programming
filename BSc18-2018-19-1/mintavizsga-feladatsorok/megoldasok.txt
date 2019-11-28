@@ -14,3 +14,19 @@ ELTE IK Imperatív programozás mintavizsga feladatsorok 2018/19/1 félév
 1.9: B
 1.10: A
 
+
+2. FELADATSOR
+
+2.1: A
+2.2: C
+2.3: B
+2.4: C
+2.5: D
+2.6: B
+2.7: A
+2.8: B
+2.9: D
+2.10: C
+
+
+
