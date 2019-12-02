@@ -87,8 +87,17 @@ a tömb indexét és a sztringbeli indexet is).
 
 
 
+
 Írjunk függvényt, amely tetszõleges méretû, valós értékeket tartalmazó kétdimenziós
 tömböt kap paraméterként. A függvény határozza meg azon oszlop indexét, amelyben van
 olyan elem, amelynek az értéke megegyezik az oszlop elemeinek átlagával. Ha több
 ilyen oszlop is van, akkor a legnagyobb indexértéket adja vissza.
+
+double array[5][3] = {
+{1.2, 3.4, 1.0},
+{1.1, 2.2, 2.0},
+{2.3, 5.6, 3.0},
+{0.42, 0.2525, 4.0},
+{2.235, 1, 5.0}
+};
 
