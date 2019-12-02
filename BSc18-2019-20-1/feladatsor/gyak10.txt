@@ -1,0 +1,25 @@
+Imperatív programozás 10. gyakorlat
+
+
+1. sztringkezelés: sprintf, sscanf, strtok (feladat Canvas-ben 8.5)
+
+2. adatállományok kezelése: fopen, fgetc, fputc, fgets, fputs, fscanf, fprintf, fclose, feof
+feldolgozás karakterenként
+feldolgozás soronként
+feldolgozás fscanf()-al
+
+3. Írjunk C programot, amely beolvassa az input.txt fájl tartalmát, és minden sorát
+kiírja a képernyõre.
+
+4. Írjunk C programot, amely beolvassa az input.txt fájl tartalmát, és minden sorra kiírja
+a képernyõre (illetve egy output.txt szöveges fájlba is) a sorokban a szóközzel
+elválasztott számok összegét.
+
+5. stdin input/output: getchar, putchar, getline (feladat Canvas-ben 1.6b)
+
+
+egyéb függvények: memset, memcpy, system, assert
+
+
+// end of semester exercises //
+
