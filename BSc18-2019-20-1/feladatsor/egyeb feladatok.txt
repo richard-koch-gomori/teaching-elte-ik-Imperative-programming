@@ -43,6 +43,7 @@ sztring ugyanaz, a visszatérési érték legyen NULL.
 
 
 6. Írjunk C makrót két egész szám maximumának meghatározására.
+7. Írjunk C makrót egész szám négyzetének meghatározására.
 
 
 
@@ -84,4 +85,10 @@ int (*parr)[10];
 karaktert, majd a függvény megkeresei a karaktert a tömbben (eredményként adja meg
 a tömb indexét és a sztringbeli indexet is).
 
+
+
+Írjunk függvényt, amely tetszõleges méretû, valós értékeket tartalmazó kétdimenziós
+tömböt kap paraméterként. A függvény határozza meg azon oszlop indexét, amelyben van
+olyan elem, amelynek az értéke megegyezik az oszlop elemeinek átlagával. Ha több
+ilyen oszlop is van, akkor a legnagyobb indexértéket adja vissza.
 
