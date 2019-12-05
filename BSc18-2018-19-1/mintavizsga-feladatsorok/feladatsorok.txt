@@ -284,3 +284,278 @@ Elvárt output 2:
 
 -------------------------------------------------------------------------------
 
+3. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+for (int idx = 2; idx <= 8; ++idx)
+    printf("%d, ", idx);
+
+(A) 2, 3, 4, 5, 6, 7, 8
+(B) 2, 3, 4, 5, 6, 7
+(C) 2, 3, 4, 5, 6, 7, 8, 9
+(D) nem fordul
+
+2. Mit ír ki a következõ program?
+
+int a = 5;
+if (a-- == 4)
+    printf("res1");
+else if (a-- == 5)
+    printf("res2");
+else
+    printf("res3");
+
+(A) nem fordul
+(B) res1
+(C) res2
+(D) res3
+
+3. Melyik deklaráció felel meg a következõnek: egy karakterre
+mutató pointer-eket tartalmazó 5 elemû tömb.
+
+(A) char* array[5]
+(B) char array[5]
+(C) char* array
+(D) char (*) array[5]
+
+4. Mit állíthatunk a következõ C programról?
+
+int main()
+{
+    int array[] = {1, 2, 3};
+    printf("%d", array[3]);
+}
+
+(A) output: 3
+(B) output: 0
+(C) nem definiált viselkedés (undefined behaviour)
+(D) nem fordul
+
+5. Melyik kifejezést kell a ... helyére írni az alábbiak
+közül, hogy az upcase_ch változóban a ch karakter nagybetûs
+alakja tárolódjon?
+
+char ch = 'd';
+char upcase_ch = ...;
+
+(A) ch - ('a' - 'A')
+(B) 'A' - ch
+(C) 'A' - 'a' - ch
+(D) ch - '0'
+
+6. Melyik a tagadás (1-es komplemens) operátor C-ben?
+
+(A) <>
+(B) !
+(C) !=
+(D) &&
+
+7. Mi a különbség az str1 és str2 sztringek között?
+(tárolás szempontjából)
+
+char str1[] = "first string";
+char* str2 = "second string";
+
+(A) semmi, hiszen a tömbök elsõ elemre mutató pointerekké
+konvertálódnak
+(B) nem fordul
+(C) az str1 egy tömb lesz, aminek az elemei írhatóak, míg
+a "second string" tárolódik a heap-en amit str2 pointerrel
+érhetünk el írásra/olvasásra
+(D) az str1 egy tömb lesz, aminek az elemei írhatóak, míg
+a "second string" tárolódik egy potenciálisan nem írható
+memóriaterületen, aminek az elsõ elemére mutat str2
+
+8. Mit ír ki a következõ Python program?
+
+string = "this is my Python string"
+string[0] = 'T'
+print(string)
+
+(A) szintaktikai hiba: Python-ban a sztringek megváltoztatása
+nem lehetséges (immutable)
+(B) szintaktikai hiba: Python-ban a sztringek 1-tõl indexelõdnek,
+a 0 érvénytelen index
+(C) "this is my Python string"
+(D) "This is my Python string"
+
+9. Melyik állítás hamis?
+
+(A) Python-ban az utasításokat ; karakterrel kell zárni
+(B) Python-ban nem szükséges elõre deklarálni a változókat
+(C) Python-ban egy egész típusú változónak értékül
+adhatunk egy sztring típusú értéket
+(D) a Python interpretált nyelv
+
+10. Mit csinál a következõ C kód?
+
+int array[] = {1, 2, 3, 4, 5};
+printf("%d", *(array + 2));
+
+(A) output: 3, a tömb elsõ eleméhez (1) hozzáad 2-t
+(B) output: 3, kiírja a tömb 2 indexû elemét
+(C) nem fordul: az array szimbólum nem használható
+aritmetikai kifejezésben
+(D) nem fordul: az array tömb méretének fordítási
+idõben ismertnek kell lennie
+
+Programozási feladat
+
+Írjon tartalmazásvizsgálat függvényt sztringekre:
+Egy adott sztringben keressük az elsõ olyan indexet,
+ahol egy adott mintasztring bármelyik karaktere elõfordul.
+Amennyiben a minta egyetlen karaktere sem fordul elõ az adott
+sztringben, a függvény visszatérési értéke legyen -1.
+Mutassa be a függvény mûködését.
+
+Példa input:
+"This is my first string", minta: "first"
+
+Elvárt output:
+2
+
+-------------------------------------------------------------------------------
+
+4. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int var = 10;
+printf("%d, ", 1 + var % 7 * 2);
+printf("%d", var);
+
+(A) 8, 10
+(B) 7, 10
+(C) 5, 10
+(D) nem fordul
+
+2. Mit írjunk A és B helyére, ha azt szeretnénk, hogy a ciklus
+visszafelé lépkedjen végig a sample sztring karakterein?
+(a sample sztringben természetesen lehetnek ismétlõdõ karakterek)
+
+char sample[] = "aaaabbbcccddd";
+int i = A;
+while (B)
+{
+    printf("%c, ", sample[i]);
+    --i;
+}
+
+(A) A: strlen(string) - 1; B: sample[i] != '\0';
+(B) A: strlen(string) - 1; B: sample[i] != sample[0];
+(C) A: strlen(string); B: i >= 0
+(D) A: strlen(string) - 1; B: i >= 0
+
+3. Milyen paraméterátadást használ a C nyelv?
+
+(A) érték szerinti
+(B) érték és referencia szerinti
+(C) érték és cím szerinti
+(D) egyik kombináció sem helyes
+
+4. Melyik állítás hamis?
+
+(A) C-ben a tömbök 0-tól kezdõdve indexelõdnek
+(B) C-ben minden tömb utolsó eleme a '\0' speciális érték
+(C) C-ben a return utasítással adhatjuk meg a függvény
+visszatérési értékét
+(D) C-ben a void speciális "típus": nem egy adattípus,
+hanem a típus nélküliségét jelzi
+
+5. Mit állíthatunk az x változóról?
+
+int x = 2; // (*)
+
+void foo()
+{
+    int x = -10; // (**)
+}
+
+(A) A (**)-al jelölt definíció felüldefiniálja a (*)-al
+jelölt definíciót, azaz a 2 érték helyére a -10 íródik be
+(B) A (**)-al jelölt definíció elfedi a (*)-al jelölt
+definíciót, azaz a (**) blokkjában létrejön egy másik
+x nevû változó -10 értékkel
+(C) fordítási hibát okoz: x nevû változót már definiáltunk
+(D) futáskor az x változó értéke elõször 2, majd -10 lesz
+
+6. Melyik sor okoz memóriaszivárgást (memory leak)?
+
+(1) int* data = malloc(2 * sizeof(int));
+(2) *data = -45;
+(3) *(data + 1) = 56;
+(4) data = malloc(1 * sizeof(int));
+(5) *data = 56;
+(6) free(data);
+
+(A) 3
+(B) 4
+(C) 5
+(D) 6
+
+7. Mit ír ki a következõ kód?
+
+const char* str1 = "imperative";
+printf("%c", *str1);
+
+(A) nem fordul: a * operátor operandusa jobbérték
+(B) nem fordul: a az "str1" inicializálása nem megfelelõ,
+* helyett [] kellene
+(C) "i"
+(D) "imperative"
+
+8. Mit ír ki a következõ Python program?
+
+def foo():
+    global var
+    var = 1
+    print "value of var: ", str(var)
+    var = 2
+
+foo()
+print "value of var: ", str(var)
+
+(A) szintaktikai hiba: nem létezik Python-ban "global" kulcsszó
+(B) szintaktikai hiba: a var változó csak a foo()
+függvény törzsében érhetõ el
+(C) "value of var: 1, value of var: 1"
+(D) "value of var: 1, value of var: 2"
+
+9. Mi lesz az eredménye a következõ Python programnak?
+
+t = (1, 2)
+t[0] += 3
+
+(A) a t értéke (1, 2, 3) lesz
+(B) a t értéke (4, 2) lesz
+(C) szintaktikai hiba: a tuple (rendezett n-es) immutable,
+értéke nem változtatható meg
+(D) szintaktikai hiba: Python-ban nincs += operátor
+
+10. Python-ban melyik állítás igaz a True or False and False
+logikai kifejezést tekintve?
+
+(A) értéke False mert az or mûvelet magasabb precedenciájú
+mint az and, ezért (True or False) and False-ként fog zárójelezõdni
+(B) értéke True mert az and mûvelet magasabb precedenciájú
+mint az or, ezért True or (False and False)-ként fog zárójelezõdni
+(C) értéke implementációfüggõ hisz az operátorok precedenciája
+nem definiált
+(D) szintaktikai hibát okoz
+
+Programozási feladat
+
+Írjon függvényt, amely egy adott sztringben megkeresi egy
+mintasztring utolsó elõfordulásának kezdõindexét.
+Amennyiben a minta nem található meg az adott sztringben,
+akkor a visszatérési érték legyen -1.
+Mutassa be a függvény mûködését.
+
+Példa input:
+"1111 0000 1011 1110 0000 1010 1011 1110", minta: "1011"
+
+Elvárt output:
+30
+
+
