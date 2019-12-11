@@ -81,7 +81,7 @@ A tömböket a main-ben hozza létre statikus méretű tömbként, és töltse f
 A szétválogatás után a páros és a páratlan tömb elemeit jól láthatóan elkülönítve a standard
 kimenetre írja.
 
-Opcionális kiegészítések, továbbfejlesztések (a pontok maradékáért)
+Jobb jegyért
 
 Az algoritmus implementációja legyen paraméterezhető: a szétválogatás csak a bemenő tömb első k
 elemére hajtódjon végre, de azokra helyesen. A main-ben létrehozott tömb továbbra is 50 méretű marad!
