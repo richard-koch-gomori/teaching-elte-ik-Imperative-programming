@@ -1,5 +1,7 @@
 
 
+#include "func.h"
+
 
 typedef enum STATE
 {
