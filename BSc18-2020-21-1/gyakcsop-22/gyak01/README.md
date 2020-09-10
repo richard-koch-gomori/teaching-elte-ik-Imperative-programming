@@ -5,7 +5,7 @@
 
 Az ELTE IK-n működő `pandora.inf.elte.hu` számítógép felkínálja a lehetőséget,
 hogy az internetről Pandora-s felhasználói fiók birtokában távolról is el
-lehet érni. A Pandora-s fiók felhasználóneve (valószínűleg) neptunkód, jelszava az
+lehessen érni. A Pandora-s fiók felhasználóneve (valószínűleg) neptunkód, jelszava az
 INF-es jelszó.
 
 A távoli elérés egyik eszköze az SSH, amelyet Windows 10-en az `ssh` paranccsal,

@@ -8,7 +8,7 @@ int main() // a program lépéseit írjuk a main()-be, a végrehajtás (programv
     printf("Hello world\n");
 
     int x; // x: a változó neve, típusa: int (integer - egész)
-    x = 12; // mivel x típusa int, x-ben egész jellegű értékeket tehetünk
+    x = 12; // mivel x típusa int, x-be egész jellegű értékeket tehetünk
 
     /*
     változó: egy változóban a változó típusának megfelelő értékeket tárolhatunk
