@@ -7,7 +7,7 @@ int main()
     int a;
 
     // scanf()-el olvasunk be a billentyűzetről
-    // egy ilyen scanf() hívás esetén a program végrehajtása megszakad
+    // egy ilyen scanf() hívás esetén a program végrehajtása ezen a ponton "megáll"
     // folytatódik, ha a felhasználó leüti az enter billentyűt
     // az a változóba kerül az, amit a felhasználó begépelt
     scanf("%i", &a);
