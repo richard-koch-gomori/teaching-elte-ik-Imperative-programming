@@ -2,7 +2,7 @@
 
 ## gyakorlat
 
-keddenként, 16:00-19:00, MS Teams/Imperatív programozás/22. csoport
+keddenként, 16:00-18:30, MS Teams/Imperatív programozás 22. gyakorlat
 
 ## konzultáció
 
