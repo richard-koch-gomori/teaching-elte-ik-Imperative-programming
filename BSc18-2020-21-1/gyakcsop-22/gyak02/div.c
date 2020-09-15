@@ -6,12 +6,14 @@
 int main()
 {
     printf("Kerek egy szamot: ");
-    int a;
-    scanf("%i\n", &a);
+    double a;
+    scanf("%lf", &a);
     printf("Kerek egy masik szamot: ");
-    int b;
-    scanf("%i\n", &b);
-    printf("a hanyados = %i\n", a / b);
+    double b;
+    scanf("%lf", &b);
+
+    double result = a / b;
+    printf("a hanyados = %lf\n", result);
 
     return 0;
 }
