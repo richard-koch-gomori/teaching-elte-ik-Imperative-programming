@@ -1,3 +1,7 @@
+/*
+Feladat: Olvassunk be egy egész számot, és írjuk ki a képernyőre,
+hogy az pozitív, negatív vagy nulla.
+*/
 
 
 #include <stdio.h>
@@ -30,6 +34,7 @@ int main()
     }
     */
 
+    // ugyanez else-if szerkezettel
     if (number < 0)
     {
         printf("negativ\n");

@@ -40,7 +40,7 @@ a `file1` másolása `file2` helyre
 `ls`  
 aktuális könyvtár tartalma, a `-l` kapcsolóval részletesebb
 
-## Fordítás GCC-vel
+## Fordítás GCC-vel, program futtatása
 
 `gcc helloworld.c -o helloworld.out`
 

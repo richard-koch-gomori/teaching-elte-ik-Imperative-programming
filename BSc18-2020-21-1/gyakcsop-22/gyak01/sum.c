@@ -1,3 +1,9 @@
+/*
+Feladat: Írjunk C programot, amely beolvas két egész számot a
+billentyűzetről, és kiírja a képernyőre az összegüket.
+*/
+
+
 #include <stdio.h>
 
 

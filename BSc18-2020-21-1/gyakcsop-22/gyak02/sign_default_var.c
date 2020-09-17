@@ -1,3 +1,7 @@
+/*
+Feladat: Egy kezdőértékkel adott változóról döntsük el,
+hogy az pozitív, negatív vagy nulla.
+*/
 
 
 #include <stdio.h>

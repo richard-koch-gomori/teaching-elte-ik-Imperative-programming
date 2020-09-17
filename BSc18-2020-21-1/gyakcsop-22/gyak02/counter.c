@@ -1,9 +1,11 @@
+/*
+Feladat: Írjuk ki 10 sorba a "hello world" szöveget.
+*/
 
 
 #include <stdio.h>
 
 
-// 1. feladat: írjuk ki 10 sorba ugyanazt a "hello world" szöveget
 int main()
 {
     int i = 0;
