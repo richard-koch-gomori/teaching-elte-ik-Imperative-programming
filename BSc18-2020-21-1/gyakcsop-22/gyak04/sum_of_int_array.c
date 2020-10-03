@@ -6,8 +6,6 @@ majd bekér ennyi db egész számot, tömbben tárolja őket, majd kiszámolja a
 
 #include <stdio.h>
 
-
-// preprocesszor szimbúlum / előfordítói szimbúlum / #define szimbúlum
 #define MAX_SIZE 10000
 
 
@@ -17,12 +15,6 @@ int main()
     int num;
     scanf("%i", &num);
 
-    // preprocesszor szimbúlum: közönséges search-and-replace fordítási időben
-    // MAX_SIZE helyére 10000 íródik
-    // a kód olvashatósága javul: ha azt írnánk h num > 10000, akkor miért éppen 10000, honnan jön ez az érték?
-    // a MAX_SIZE beszédesebb
-    // valamint ha a kódban később 10000 helyett 20000-t szeretnénk korlátozásnak,
-    // csak a #define MAX_SIZE 10000 sorban kell átírni a 10000-t 20000-re
     if (num > MAX_SIZE)
     {
         printf("Sorry bro, %i is the max for num\n", MAX_SIZE);
