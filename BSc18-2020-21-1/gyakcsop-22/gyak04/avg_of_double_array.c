@@ -26,15 +26,15 @@ int main()
 
         for (int i = 0; i < num; ++i)
         {
-        printf("Enter an num: ");
-        scanf("%lf", &array[i]);
+            printf("Enter an num: ");
+            scanf("%lf", &array[i]);
         }
 
         double sum = 0;
         for (int i = 0; i < num; ++i)
         {
-        sum = sum + array[i];
-        // sum += array[i];
+            sum = sum + array[i];
+            // sum += array[i];
         }
         printf("Avg: %lf\n", sum / num);
     }

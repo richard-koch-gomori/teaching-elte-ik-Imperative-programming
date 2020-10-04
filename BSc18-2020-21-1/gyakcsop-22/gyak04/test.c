@@ -24,7 +24,7 @@ int main()
     // 8 bit == 1 bájt
     printf("sizeof(int) = %li\n", sizeof(int));
 
-    int a = 5; // sizeof(int), az én gépemen sizeof(int) = 4 -> az int 4 bájton van tárolva, azaz 32 bit
+    int a = 5; // az én gépemen sizeof(int) == 4 -> az int 4 bájton van tárolva, azaz 32 bites
     int b = factorial(a);
     printf("%i\n", b);
     printf("%i\n", factorial(1));

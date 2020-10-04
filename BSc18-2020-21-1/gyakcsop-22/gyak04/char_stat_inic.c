@@ -18,7 +18,7 @@ int main()
     text[2] = 's';
     text[3] = 't';
 
-    // C-ben a sztringek végén a '\0' karakterrel kell zárni
+    // C-ben a sztringek végét a '\0' karakterrel kell zárni
     // a karaktertömb méretének megadásakor emiatt a +1 karakterrel számolni kell
     text[4] = '\0';
 
