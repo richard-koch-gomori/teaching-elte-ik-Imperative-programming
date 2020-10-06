@@ -13,7 +13,12 @@ int main()
 {
     char text[256];
     printf("Enter a text: ");
+
+    // sztring beolvasása a billentyűzetről
+    // gets() nem biztonságos, most elmegy, később megnézzük hogy lehet biztonságosan
+    // sztringet beolvasni a billentyűzetről
     gets(text);
+
     int count_a = 0, count_e = 0, count_i = 0, count_o = 0, count_u = 0;
 
     for (int idx = 0; text[idx] != '\0'; idx++)
