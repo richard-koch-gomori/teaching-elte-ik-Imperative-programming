@@ -69,21 +69,31 @@ A szavak között egy vagy több szóköz is lehet.
 Olvassunk be egy sztringet és egy karaktert. Számoljuk meg, hány olyan szó van
 a mondatban, amely az adott karakterre végződik.
 
-### feladat
-
-
+## Mutatók
 
 ### feladat
 
-
+Írjon C programot, amelyben definiál és inicializál egy double, int és char
+típusú változót. Ezután definiáljon és inicializáljon három pointer-t, amelyek
+az előbb létrehozott változóra mutatnak. Írja ki a képernyőre a változók
+(összesen 6 változó) memóriacímét, tartalmát és méretét (bájtokban).
 
 ### feladat
 
-
+Írjon C programot, amelyben tárol egy konstans karaktersorozatot. Írja ki
+a képernyőre a sztring elejéről az első szóköztől eltérő karaktert.
 
 ### feladat
 
+Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény döntse el, hogy az egészek között van-e két olyan elem
+amelyek szorzata a paraméterben kapott egész.
 
+### feladat
+
+Írjon C függvényt, amely egészre mutató pointer-t és azok darabszámát
+fogadja. A függvény a páros számok között maximumot, a páratlan számok
+között minimumot keres. A függvény adja meg a szélsőértékek mutatóját.
 
 ### feladat
 
