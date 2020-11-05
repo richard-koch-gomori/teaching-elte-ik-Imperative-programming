@@ -95,7 +95,10 @@ int main()
     printf("Enter password: ");
     gets(passwd);
     if (strcmp(passwd, "foo") == 0)
+    {
         is_admin = 1;
+    }
+    // ...
     if (is_admin)
     {
         printf("blah");
