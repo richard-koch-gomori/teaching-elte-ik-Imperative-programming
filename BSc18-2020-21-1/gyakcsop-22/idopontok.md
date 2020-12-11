@@ -11,7 +11,7 @@ igény esetén; email-ben/személyesen lehet egyeztetni konzultációt bármikorra
 
 ## zárthelyi dolgozatok
 
-nagyzárthelyi dolgozat: [coming soon]  
+nagyzárthelyi dolgozat: december 16. 10:00-14:00 (MS Teams)  
 pótzh: [coming soon]
 
 
