@@ -56,13 +56,13 @@ fordítási egységében legyenek elérhetőek).
 
 Ebben a feladatban átalakítjuk az eddigi megoldást úgy, hogy a
 függvények nem globális változókat módosítanak, hanem készítünk egy
-újabb `struct` típust, amelynek adattagjai töltik be az eddigi globális
+újabb `struct` típust, amelynek mezői töltik be az eddigi globális
 változók szerepét, és a függények paraméterként kapnak ilyen `struct`
 típusú példányokat, amelyeken operálnak.
 
 Szabaduljunk meg a `data[]` és `current_size` globális változóktól és a
 `MAX_SIZE` szimbólumtól. Készítsünk egy újabb `struct` típust az
-`item_t` mellé, amelynek a neve legyen `Bag`, és három adattagja legyen:
+`item_t` mellé, amelynek a neve legyen `Bag`, és három mezője legyen:
 
 `data`, `item_t` típusú adatra mutató pointer
 
@@ -77,7 +77,7 @@ tárolni, amelyet pointeraritmetikával vagy tömbindexeléssel érhetünk el
 \[Segítség: Például, ha a `bag1` változó `Bag` típusú, akkor a
 `bag1.data` hivatkozás `item_t*` típusú eredményt ad, amely `item_t`
 struktúra pointer-e. `bag1.data[i]` az i-edik `item_t` példányt adja
-eredményül, amelynek például a `mult` adattagjára így hivatkozhatunk:
+eredményül, amelynek például a `mult` mezőjére így hivatkozhatunk:
 `bag1.data[i].mult`, ahol `0 <= i` és `i < current_size`\]
 
 `current_size` jelenti a tárolt `item_t` típusú adatok számát, a
@@ -89,9 +89,9 @@ Módosítsa az `init()`, `add()`, `PrintAllItems()` függvényeket úgy,
 paraméterként fogadjanak `Bag` vagy `Bag*` típusú adatot. Az `init()` és
 `add()` módosítani is fogják ezt a paramétert! Az `init()` függvénynek
 legyen továbbá egy `max_size` paramétere, amelyet írjon be a `Bag`
-paraméter `max_size` adattagjába, ezenkívül foglaljon le `max_size`
+paraméter `max_size` mezőjébe, ezenkívül foglaljon le `max_size`
 darab `item_t` típusú elemnek helyet a heap-en, a lefoglalt tárterület
-első elemére mutató pointer-t tárolja a data adattagban.
+első elemére mutató pointer-t tárolja a `data` mezőben.
 
 Az `init()` függvény 1-es visszatérési értékkel jelezze, ha a
 memóriafoglalás sikertelen volt, sikeres működés esetén 0-val térjen
@@ -102,6 +102,6 @@ Módosítsa a főprogramot a megváltozott paraméterezésnek megfelelően.
 A program ne leak-elje a memóriát! Készítsen egy `finalize()` függvényt,
 amely hasonlóan egy `Bag` típusú adatot fogad, és felszabadítja a
 korábban lefoglalt dinamikus memóriaterületet, valamint a `current_size`
-és `max_size` adattagokat 0-ra állítja.
+és `max_size` mezőket 0-ra állítja.
 
 
