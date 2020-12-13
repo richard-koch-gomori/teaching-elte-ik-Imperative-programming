@@ -7,6 +7,8 @@ a 12. gyakorlat (2020. december 1.) másik idõpontban lesz megtartva: 2020. decem
 
 ## konzultáció
 
+december 15. 16:00-18:30, MS Teams gyakorlat csoport
+
 igény esetén; email-ben/személyesen lehet egyeztetni konzultációt bármikorra
 
 ## zárthelyi dolgozatok
