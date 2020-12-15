@@ -5,6 +5,7 @@
 
 int main()
 {
+    // Boros Bálint megoldása
     unsigned char ch;
     do
     {
@@ -12,6 +13,7 @@ int main()
         printf("%02x\n", ch);
     } while (ch != EOF);
 
+    // Vargha Csongor Csaba megoldása
     // ez is jó megoldás:
     /*
     unsigned char character;
