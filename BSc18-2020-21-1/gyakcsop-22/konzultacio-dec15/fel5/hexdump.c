@@ -1,4 +1,4 @@
-
+// Nem 100%-os megoldás, idő hiányában félretettük
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,8 +49,8 @@ int hd(FILE* f)
             i=0;
         }
     } while ( ch!= EOF );
-    pos += i;
     printline(tomb, i, pos);
+    pos += i;
     return 0;
 }
 

@@ -1,4 +1,4 @@
-// Szügyi Attila István megoldása
+
 
 #include <stdio.h>
 #include <stdlib.h>

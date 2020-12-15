@@ -1,12 +1,13 @@
-// Nem 100%-os megoldás, idő hiányában félretettük
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "func.h"
+
 #include <ctype.h>
 
-#define SIZE 16
+char tomb[SIZE];
+long int pos = 0;
 
-void printline(char tomb[], const int size, long int pos)
+
+void printline(const int size, long int pos)
 {
     printf("%08lx  ", pos);
     int i=0;
@@ -31,26 +32,25 @@ void printline(char tomb[], const int size, long int pos)
 }
 
 
-int main()
+int hd(FILE* f)
 {
     char ch;
-    char tomb[SIZE];
-    long int pos = 0;
     int i=0;
     do {
-        ch = getchar();
+        ch = fgetc(f);
         if(i<SIZE){
             tomb[i]=ch;
             i++;
         }
         else{
-            printline(tomb, SIZE, pos);
+            printline(SIZE, pos);
             pos += SIZE;
             i=0;
         }
     } while ( ch!= EOF );
-    printline(tomb, i, pos);
+    //printline(i, pos);
     pos += i;
     return 0;
 }
+
 

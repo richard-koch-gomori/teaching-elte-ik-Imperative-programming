@@ -6,7 +6,12 @@
 
 #define SIZE 16
 
-void printline(char tomb[], const int size, long int pos)
+
+char tomb[SIZE];
+long int pos = 0;
+
+
+void printline(const int size, long int pos)
 {
     printf("%08lx  ", pos);
     int i=0;
@@ -31,26 +36,40 @@ void printline(char tomb[], const int size, long int pos)
 }
 
 
-int main()
+int hd(FILE* f)
 {
     char ch;
-    char tomb[SIZE];
-    long int pos = 0;
     int i=0;
     do {
-        ch = getchar();
+        ch = fgetc(f);
         if(i<SIZE){
             tomb[i]=ch;
             i++;
         }
         else{
-            printline(tomb, SIZE, pos);
+            printline(SIZE, pos);
             pos += SIZE;
             i=0;
         }
     } while ( ch!= EOF );
-    printline(tomb, i, pos);
+    printline(i, pos);
     pos += i;
+    return 0;
+}
+
+int main(int argc, char* argv[])
+{
+    for (int i = 1; i < argc; ++i)
+    {
+        FILE* input = fopen(argv[i], "r");
+        if (input == NULL)
+        {
+            return 1;
+        }
+        hd(input);
+        fclose(input);
+    }
+
     return 0;
 }
 
