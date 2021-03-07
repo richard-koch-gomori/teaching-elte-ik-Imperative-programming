@@ -1,0 +1,52 @@
+Imperatív programozás 5. gyakorlat
+
+
+1. Mit ír ki?
+
+printf("%i\n", INT_MAX);
+int x = 2000000000;
+int y = 3000000000;
+int z = x + y;
+printf("%i\n", z);
+long long int xl = 2000000000;
+long long int yl = 3000000000;
+long long int zl = xl + yl;
+printf("%lli\n", zl);
+
+2. Írjunk int inc(int) függvényt, amely az int paramétert megnöveli 1-gyel,
+de csak akkor, ha nem fog túlcsordulás történni.
+
+3. Írjunk C függvényt, amely egy karaktersorozatban tárolt számot egész számmá alakít.
+
+4. Mi lesz a végeredmény típusa?
+
+char ch = 34;
+int i = 123;
+float f = 3.1415;
+double d = 456.002314;
+int r = (i / ch) + (f * d) - (f + i);
+
+r = (i / ch) + (int)(f * d) - ((int)f + i)
+
+Az 5., 6., 7. feladatok függvényei a utils fordítási egységben, a 8., 9. és 10.
+feladatok függvényei a foo fordítási egységben legyenek megvalósítva. A feladatokhoz
+egyetlen példaprogram tartozzon, example fordítási egység néven.
+
+5. Írjon függvényt, amely a paraméterként átvett karaktersorozatot helyben megfordítja.
+
+6. Írjon függvényt, amely a paraméterként átvett karaktersorozatból törli az összes,
+második paraméterben átvett karaktert.
+
+7. Írjon int strany(const char str[], const char tmp[]) függvényt, amely visszatér str[]
+legelsõ olyan indexével, ahol a tmp[] sztring bármelyik karaktere elõfordul.
+
+8. Írjon függvényt, amely a paraméterként kapott egész számot sztringgé alakítja,
+az eredménysztringet paraméterben adja vissza.
+
+9. Írjon függvényt, amely az a-f alakú rövidítéseket oldja fel a paraméterben kapott
+sztringben (a-f -et kicseréli abcdef -re). Feltehetõ, hogy a sztringben a kötõjel (-)
+csak rövidítés megadása miatt szerepel, és hogy minden rövidítés helyesen van megadva.
+
+10. Írjon függvényt, amely a paraméterként kapott tízes számrendszerbeli egész számot
+átváltja tetszõleges (paraméterként kapott) alapú számrendszerbe.
+

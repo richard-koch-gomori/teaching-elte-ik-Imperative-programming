@@ -1,0 +1,561 @@
+ELTE IK Imperatív programozás mintavizsga feladatsorok 2018/19/1 félév
+
+
+1. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int a = 7;
+if (a % 3 == 2)
+    printf("result1");
+else
+    printf("result2");
+
+(A) nem fordul
+(B) semmit (üres képernyõ)
+(C) result1
+(D) result2
+
+2. Hány iterációt hajt végre a következõ ciklus (hányszor
+hajtódik végre a printf() függvényhívás)?
+
+int i = 10;
+while (--i > 3)
+    printf("%d", i);
+
+(A) nem fordul
+(B) 0
+(C) 6
+(D) 7
+
+3. Mit ír ki a következõ program?
+
+char msg[] = "CBA";
+printf("%d", msg[3]);
+
+(A) futási hiba: az msg tömbnek 3 eleme van, nem hivatkozhatunk az
+utolsó utáni elemre
+(B) nem definiált viselkedés (undefined behaviour)
+(C) 65
+(D) 0
+
+4. Melyik deklarációnak felel meg a következõ:
+"point" nevû, elõjel nélküli, hosszú egész (long int)
+konstans változóra mutató pointer
+
+(A) const unsigned long int* point;
+(B) const long int* point;
+(C) unsigned long int* const point;
+(D) const signed long int* point;
+
+5. Melyik állítás igaz a következõ program esetén?
+
+int* pointer = (int*)malloc(5000 * sizeof(int));
+
+(A) a heap-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a stack-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(B) a stack-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a heap-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(C) a heap-en létrejön egy sizeof(int*) méretû tárterület ahol
+tárolódik a heap-en létrejött, egy legalább 5000 * sizeof(int)
+méretû tárterület kezdõ memóriacíme
+
+(D) egyik sem
+
+6. C-ben kiértékelés után mi lesz az 5/10 + 100 kifejezés típusa?
+
+(A) double
+(B) float
+(C) int
+(D) unsigned int
+
+7. Melyik állítás hamis?
+
+(A) C-ben a változók deklarációja nem mindig jár memóriafoglalással
+(B) void x; deklaráció esetén az x változónak tetszõleges
+típusú érték adható
+(C) a main() függvény visszatérési értéke információt ad az
+operációs rendszernek a program sikerességérõl
+(D) a main() függvény paraméterben megkapja a program
+parancssori argumentumait
+
+8. Melyik állítás hamis?
+
+(A) Python-ban az indentálást behúzással adjuk meg
+(B) a Python magas szintû programozási nyelv
+(C) Python-ban a karakterlánc immutable típus
+(D) Python-ban minden változót deklarálni kell a felhasználása elõtt
+
+9. Mit ír ki a következõ Python program?
+
+list = [1, 10]
+print(2 in list)
+
+(A) True
+(B) False
+(C) nem fordul: [2] in list lenne helyes
+(D) nem fordul: nincs in operátor Python-ban
+
+10. Mit jelent a szimultán értékadás Python-ban?
+
+(A) egy utasításban több változó kap különbözõ értéket
+(B) egy utasításban több változó kapja ugyanazt az értéket
+(C) Python-ban nincs szimultán értékadás
+(D) egyik sem a megadottak közül
+
+Programozási feladat
+
+Írjon függvényt egy sztringben az "[a-z]" alakú rövidítések
+feloldására, tehát a sztringben a "[a-z]" helyett "abcde...xyz"
+szerepeljen. Elég az angol ABC betûivel dolgozni.
+
+Például a "This is my [f-o] string"-re a helyes output:
+"This is my fhijklmno string". Vegye figyelembe, hogy egy sztringben
+több rövidítés is lehet, azonban rövidítésen belül nem lehet
+másik rövidítés. Felteheto hogy a [ és ] karakterek csak ezen
+célból fordulnak elõ a sztringben, és mindegyik rövidítés
+helyesen van megadva.
+
+Szemléltesse a függvény mûködését.
+
+Példa input:
+"This is [f-o] to demo [a-z] my [a-b] [b-b] program [b-d]"
+
+Elvárt output:
+"This is fghijklmno to demo abcdefghijklmnopqrstuvwxyz my ab b program bcd"
+
+-------------------------------------------------------------------------------
+
+2. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int a = -1;
+int b = 4;
+if (a < 0 || b < 0)
+    printf("A");
+else
+    printf("B");
+
+(A) A
+(B) B
+(C) semmit (üres képernyõ)
+(D) nem fordul
+
+2. Mennyi lesz az x változó értéke a következõ program
+futása után?
+
+int x = 20;
+for (; x > 0; x = x - 3);
+
+(A) 1
+(B) 0
+(C) -1
+(D) nem fordul
+
+3. Mit ír ki a következõ program?
+
+printf("%d", 5/2 + 10);
+
+(A) 11
+(B) 12
+(C) 12.5
+(D) nem fordul
+
+4. A felsorolt lehetõségek közül melyik értékadás helyes
+és változtatja meg az x változó értékét 5-re?
+
+int x = 2;
+int* pint = &x;
+int** ppint = &pint;
+
+(A) *ppint = 5
+(B) **ppint = *x + 3
+(C) **ppint = *pint + 3
+(D) egyik sem
+
+5. Mi a hiba a következó C kódban, ha a
+"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0," output-ot szeretnénk?
+
+printf("Counting back from 10 to 0\n\n");
+int idx = 11;
+while (idx != 1)
+{
+    printf("%d, ", idx = idx - 1);
+}
+
+(A) Az idx változó értékét 10-rõl kellene indítani
+(B) Az idx = idx - 1 értékadás nem lehet a printf() argumentuma,
+helyette idx-- kellene
+(C) Az idx = idx - 1 értékadás nem lehet a printf() argumentuma,
+helyette --idx kellene
+(D) A ciklus feltételének idx != 0 vagy idx-nek kellene lennie
+
+6. Melyik deklaráció felel meg a következõnek: egy elõjel
+nélküli, hosszú egész (long int)-eket tartalmazó tömböt
+és egy egész számot fogadó függvény, amely nem tér
+vissza értékkel.
+
+(A) void foo(array of unsigned long int, int size) {}
+(B) void foo(unsigned long int* array, int size) {}
+(C) int foo(unsigned long[], int size) {}
+(D) egyik sem
+
+7. Melyik állítás igaz?
+
+(A) a C alacsonyszintû programozási nyelv
+(B) C-ben a változók deklarációja mindig memóriafoglalással jár
+(C) C-ben minden függvény tér vissza értékkel
+(D) C-ben a függvényparamétereket átvehetjük érték vagy
+referencia szerint is
+
+8. Mit ír ki a következõ Python program?
+
+list = ["hello world", -34, 3.14, 77, 0.1]
+print(list[2:])
+
+(A) szintaktikai hiba: hiányzik az intervallum felsõ határa
+(B) [3.14, 77, 0.1]
+(C) [-34, 3.14, 77, 0.1]
+(D) [3.14]
+
+9. Mit ír ki a következõ Python kód?
+
+x = 1
+y = 2
+
+def function():
+    y = x;
+    print(x)
+    x = 3
+
+function()
+
+(A) 1
+(B) 3
+(C) szintaktikai hiba: x nevû változó már van a programban
+(D) szintaktikai hiba: az x változó function()-ban lokális,
+nem hivatkozhatunk rá az értékadása elõtt
+
+10. Melyik állítás hamis?
+
+(A) C-ben deklarálhatunk függvényt függvényen belül
+(B) C-ben nem definiálhatunk függvényt függvényen belül
+(C) Python-ban a beágyazott függvények láthatósága
+az egész program
+(D) Python-ban a beágyazott függvények láthatósága
+az õt definiáló függvény
+
+Programozási feladat
+
+Írjon függvényt, amely a paraméterként kapott egészeket
+tartalmazó tömbön (Python választás esetén listán) megvalósítja
+a bináris (logaritmikus) keresést.
+
+A logaritmikus keresés egy monoton növekvõen rendezett tömb
+esetén megkeresi valamely adott elem indexét. Az algoritmus
+elõször megfelezi a teljes tömböt, megnézi hogy a középen
+lévõ elem hogyan viszonyul a keresett értékhez. Ha egyenlõ
+vele, készen vagyunk. Ha a középen lévõ elem kisebb mint a
+keresett érték, akkor a keresett elem a megfelezett tömb felsõ
+részében van, máskülönben az alsó részében.
+
+Ezt a mûködést alkalmazzuk a tömb megfelelõ részére.
+Amennyiben a vizsgált rész mérete 0, akkor a keresett érték
+nem szerepel a tömbben, ekkor a visszatérési érték legyen -1.
+
+Mutassa be a függvény mûködését.
+
+Példa input 1:
+[-2, 0, 5, 7, 11, 15, 23], keressük a 15-ös elemet
+
+Elvárt output 1:
+5
+
+Példa input 2:
+[-2, 0, 5, 7, 11, 15, 23], keressük a 16-os elemet
+
+Elvárt output 2:
+-1
+
+-------------------------------------------------------------------------------
+
+3. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+for (int idx = 2; idx <= 8; ++idx)
+    printf("%d, ", idx);
+
+(A) 2, 3, 4, 5, 6, 7, 8
+(B) 2, 3, 4, 5, 6, 7
+(C) 2, 3, 4, 5, 6, 7, 8, 9
+(D) nem fordul
+
+2. Mit ír ki a következõ program?
+
+int a = 5;
+if (a-- == 4)
+    printf("res1");
+else if (a-- == 5)
+    printf("res2");
+else
+    printf("res3");
+
+(A) nem fordul
+(B) res1
+(C) res2
+(D) res3
+
+3. Melyik deklaráció felel meg a következõnek: egy karakterre
+mutató pointer-eket tartalmazó 5 elemû tömb.
+
+(A) char* array[5]
+(B) char array[5]
+(C) char* array
+(D) char (*) array[5]
+
+4. Mit állíthatunk a következõ C programról?
+
+int main()
+{
+    int array[] = {1, 2, 3};
+    printf("%d", array[3]);
+}
+
+(A) output: 3
+(B) output: 0
+(C) nem definiált viselkedés (undefined behaviour)
+(D) nem fordul
+
+5. Melyik kifejezést kell a ... helyére írni az alábbiak
+közül, hogy az upcase_ch változóban a ch karakter nagybetûs
+alakja tárolódjon?
+
+char ch = 'd';
+char upcase_ch = ...;
+
+(A) ch - ('a' - 'A')
+(B) 'A' - ch
+(C) 'A' - 'a' - ch
+(D) ch - '0'
+
+6. Melyik a tagadás (1-es komplemens) operátor C-ben?
+
+(A) <>
+(B) !
+(C) !=
+(D) &&
+
+7. Mi a különbség az str1 és str2 sztringek között?
+(tárolás szempontjából)
+
+char str1[] = "first string";
+char* str2 = "second string";
+
+(A) semmi, hiszen a tömbök elsõ elemre mutató pointerekké
+konvertálódnak
+(B) nem fordul
+(C) az str1 egy tömb lesz, aminek az elemei írhatóak, míg
+a "second string" tárolódik a heap-en amit str2 pointerrel
+érhetünk el írásra/olvasásra
+(D) az str1 egy tömb lesz, aminek az elemei írhatóak, míg
+a "second string" tárolódik egy potenciálisan nem írható
+memóriaterületen, aminek az elsõ elemére mutat str2
+
+8. Mit ír ki a következõ Python program?
+
+string = "this is my Python string"
+string[0] = 'T'
+print(string)
+
+(A) szintaktikai hiba: Python-ban a sztringek megváltoztatása
+nem lehetséges (immutable)
+(B) szintaktikai hiba: Python-ban a sztringek 1-tõl indexelõdnek,
+a 0 érvénytelen index
+(C) "this is my Python string"
+(D) "This is my Python string"
+
+9. Melyik állítás hamis?
+
+(A) Python-ban az utasításokat ; karakterrel kell zárni
+(B) Python-ban nem szükséges elõre deklarálni a változókat
+(C) Python-ban egy egész típusú változónak értékül
+adhatunk egy sztring típusú értéket
+(D) a Python interpretált nyelv
+
+10. Mit csinál a következõ C kód?
+
+int array[] = {1, 2, 3, 4, 5};
+printf("%d", *(array + 2));
+
+(A) output: 3, a tömb elsõ eleméhez (1) hozzáad 2-t
+(B) output: 3, kiírja a tömb 2 indexû elemét
+(C) nem fordul: az array szimbólum nem használható
+aritmetikai kifejezésben
+(D) nem fordul: az array tömb méretének fordítási
+idõben ismertnek kell lennie
+
+Programozási feladat
+
+Írjon tartalmazásvizsgálat függvényt sztringekre:
+Egy adott sztringben keressük az elsõ olyan indexet,
+ahol egy adott mintasztring bármelyik karaktere elõfordul.
+Amennyiben a minta egyetlen karaktere sem fordul elõ az adott
+sztringben, a függvény visszatérési értéke legyen -1.
+Mutassa be a függvény mûködését.
+
+Példa input:
+"This is my first string", minta: "first"
+
+Elvárt output:
+2
+
+-------------------------------------------------------------------------------
+
+4. FELADATSOR
+
+1. Mit ír ki a következõ program?
+
+int var = 10;
+printf("%d, ", 1 + var % 7 * 2);
+printf("%d", var);
+
+(A) 8, 10
+(B) 7, 10
+(C) 5, 10
+(D) nem fordul
+
+2. Mit írjunk A és B helyére, ha azt szeretnénk, hogy a ciklus
+visszafelé lépkedjen végig a sample sztring karakterein?
+(a sample sztringben természetesen lehetnek ismétlõdõ karakterek)
+
+char sample[] = "aaaabbbcccddd";
+int i = A;
+while (B)
+{
+    printf("%c, ", sample[i]);
+    --i;
+}
+
+(A) A: strlen(string) - 1; B: sample[i] != '\0';
+(B) A: strlen(string) - 1; B: sample[i] != sample[0];
+(C) A: strlen(string); B: i >= 0
+(D) A: strlen(string) - 1; B: i >= 0
+
+3. Milyen paraméterátadást használ a C nyelv?
+
+(A) érték szerinti
+(B) érték és referencia szerinti
+(C) érték és cím szerinti
+(D) egyik kombináció sem helyes
+
+4. Melyik állítás hamis?
+
+(A) C-ben a tömbök 0-tól kezdõdve indexelõdnek
+(B) C-ben minden tömb utolsó eleme a '\0' speciális érték
+(C) C-ben a return utasítással adhatjuk meg a függvény
+visszatérési értékét
+(D) C-ben a void speciális "típus": nem egy adattípus,
+hanem a típus nélküliségét jelzi
+
+5. Mit állíthatunk az x változóról?
+
+int x = 2; // (*)
+
+void foo()
+{
+    int x = -10; // (**)
+}
+
+(A) A (**)-al jelölt definíció felüldefiniálja a (*)-al
+jelölt definíciót, azaz a 2 érték helyére a -10 íródik be
+(B) A (**)-al jelölt definíció elfedi a (*)-al jelölt
+definíciót, azaz a (**) blokkjában létrejön egy másik
+x nevû változó -10 értékkel
+(C) fordítási hibát okoz: x nevû változót már definiáltunk
+(D) futáskor az x változó értéke elõször 2, majd -10 lesz
+
+6. Melyik sor okoz memóriaszivárgást (memory leak)?
+
+(1) int* data = malloc(2 * sizeof(int));
+(2) *data = -45;
+(3) *(data + 1) = 56;
+(4) data = malloc(1 * sizeof(int));
+(5) *data = 56;
+(6) free(data);
+
+(A) 3
+(B) 4
+(C) 5
+(D) 6
+
+7. Mit ír ki a következõ kód?
+
+const char* str1 = "imperative";
+printf("%c", *str1);
+
+(A) nem fordul: a * operátor operandusa jobbérték
+(B) nem fordul: a az "str1" inicializálása nem megfelelõ,
+* helyett [] kellene
+(C) "i"
+(D) "imperative"
+
+8. Mit ír ki a következõ Python program?
+
+def foo():
+    global var
+    var = 1
+    print "value of var: ", str(var)
+    var = 2
+
+foo()
+print "value of var: ", str(var)
+
+(A) szintaktikai hiba: nem létezik Python-ban "global" kulcsszó
+(B) szintaktikai hiba: a var változó csak a foo()
+függvény törzsében érhetõ el
+(C) "value of var: 1, value of var: 1"
+(D) "value of var: 1, value of var: 2"
+
+9. Mi lesz az eredménye a következõ Python programnak?
+
+t = (1, 2)
+t[0] += 3
+
+(A) a t értéke (1, 2, 3) lesz
+(B) a t értéke (4, 2) lesz
+(C) szintaktikai hiba: a tuple (rendezett n-es) immutable,
+értéke nem változtatható meg
+(D) szintaktikai hiba: Python-ban nincs += operátor
+
+10. Python-ban melyik állítás igaz a True or False and False
+logikai kifejezést tekintve?
+
+(A) értéke False mert az or mûvelet magasabb precedenciájú
+mint az and, ezért (True or False) and False-ként fog zárójelezõdni
+(B) értéke True mert az and mûvelet magasabb precedenciájú
+mint az or, ezért True or (False and False)-ként fog zárójelezõdni
+(C) értéke implementációfüggõ hisz az operátorok precedenciája
+nem definiált
+(D) szintaktikai hibát okoz
+
+Programozási feladat
+
+Írjon függvényt, amely egy adott sztringben megkeresi egy
+mintasztring utolsó elõfordulásának kezdõindexét.
+Amennyiben a minta nem található meg az adott sztringben,
+akkor a visszatérési érték legyen -1.
+Mutassa be a függvény mûködését.
+
+Példa input:
+"1111 0000 1011 1110 0000 1010 1011 1110", minta: "1011"
+
+Elvárt output:
+30
+
+

@@ -1,0 +1,18 @@
+Mit ír ki a képernyõre a következõ C kód?
+
+
+#include <stdio.h>
+
+
+int main()
+{
+    int i;
+    char str[256] = "test1test2";
+    for (i = 1; i < 5; i++)
+    {
+        printf("%c\n", str[i + 1]);
+    }
+    printf("i = %i\n", i);
+    return 0;
+}
+

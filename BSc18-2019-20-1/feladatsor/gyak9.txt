@@ -1,0 +1,73 @@
+Imperatív programozás 9. gyakorlat
+
+
+1. Készítsen kétdimenziós pont saját típust. Írjon függvényt, amely
+kétdimenzós pontok síkbeli távolságát számolja ki.
+
+2. Valósítsa meg egész számok láncolt listában tárolását. Másolja le a láncolt
+listát (csak shallow-copy).
+
+3. (a) Készítsen foo néven fordítási egységet, benne counter() néven függvényt,
+amely minden híváskor kiírja a képernyõre, hogy éppen hányadik alkalommal
+hívták meg azt a függvényt (globális változóval). (b) Oldja meg, hogy az (a)
+megoldás változója ne látszódjon ki a fordítási egységbõl. (c) Oldja meg az
+(a) feladatot globális változó használata nélkül.
+
+4. Rajzoljon memóriatérképeket (memory map) a következõ C program
+végrehajtásakor a kommentben megadott pontokban (tegyük fel, hogy
+a kódot úgy fordítják, hogy a fordító nem végez optimalizációt).
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+#define MAX_STRING_SIZE 12
+
+
+int main()
+{
+    // A
+    int var1 = 67;
+    double arr[5] = {-1, -2, -3, -4, -5};
+    char string[] = "sample";
+    char* ptr = "imperative";
+
+    // B
+    int* pint = (int*)malloc(sizeof(int));
+    *pint = -12;
+
+    // C
+    char* pchar = (char*)malloc(MAX_STRING_SIZE * sizeof(char));
+    strncpy(pchar, "hello", MAX_STRING_SIZE);
+
+    // D
+    free(pint);
+    free(pchar);
+
+    // E
+    return 0;
+}
+
+
+5. Tekintsük a következõ deklarációt:
+
+char* array[5] = {"first", "second", "ABCQB", "fourth", "fifth"};
+
+Mi a következõ kifejezések típusa és eredménye?
+
+array
+*array + 1
+*(*array + 1)
+*(*(array + 2) + 3)
+
+6. Írjunk egy month_name(n) függvényt, amely egy, az n-edik hónap nevét tartalmazó
+karaktersorozatot címzõ mutatót ad visszatérési értékként.
+
+7. Írjunk programot, amely a program argumentumaként fogad két pozitív egész számot,
+majd ezzel az intervallummal lejátszatja a felhasználóval a Random Guessing Game-t.
+Ha az argumentumok nem megfelelõek, 1-es hibakóddal termináljon a program.
+
+8. Írjon C függvényt, amely paraméterként kap egy kétdimenziós tömböt, és elõállít egy
+olyan tömböt, amely a sorok átlagát tartalmazza.
+

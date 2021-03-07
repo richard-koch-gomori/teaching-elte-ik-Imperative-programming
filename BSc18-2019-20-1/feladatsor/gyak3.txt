@@ -1,0 +1,37 @@
+Imperatív programozás 3. gyakorlat
+
+
+1. Írjon C függvényt, amely a paraméterben átadott sztring hosszával tér vissza.
+
+2. Írjuk ki következõ tömb méretét és elemszámát. Számoljuk meg, hogy a numbers[]
+tömbben hány nulla, pozitív illetve negatív egész szám van.
+
+int numbers[] = {56, 78, 34, -56, 0, 1, -1, 54, 7, 89, -2, 100, 566, 321523, -3, 87,
+0, 36, -1, -45, -25231285, 6, 14, -69, 123, 46747, 234, 7, -235, 346, 1325, -4436, 7457};
+
+3. Írjunk C függvényt, amely paraméterként egészeket tartalmazó tömböt fogad, és
+kiírja a képernyõre az elemeit.
+
+4. Írjunk C függvényt, amely paraméterként egészeket tartalmazó tömböt fogad és
+megvalósítja a tömbön a bináris (logaritmikus) keresést.
+
+5. Írjunk C függvényt, amely paraméterként egészeket tartalmazó tömböt fogad és a
+tömb mindegyik elemét megszorozza 2-vel.
+
+6. Írjunk C függvényt, amely kiszámolja egy négyzetes mátrix fõátlójában álló elemek összegét.
+
+
+feladatok önálló megoldásra (összefoglalás)
+
+1. Írjon C programot, amely beolvas a billentyûzetrõl egy lebegõpontos hatvány alapot
+és kitevõt, majd a kijelölt hatványozást elvégzi a math.h könyvtár pow() függvényével.
+
+2. Írjunk C függvényt, amely egy egészeket tartalmazó tömbben megkeresi a maximumot.
+
+3. Keresse meg a legnagyobb olyan 2003-nál kisebb egész számot, amely 123-mal osztható.
+
+4. Írjon C függvényt, amely a paraméterben átadott sztringrõl eldönti, hogy tartalmaz-e
+nagybetût.
+
+5. Írjon C függvényt n faktoriálisának kiszámítására.
+

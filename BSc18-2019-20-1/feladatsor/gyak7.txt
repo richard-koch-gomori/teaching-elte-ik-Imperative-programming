@@ -1,0 +1,36 @@
+Imperatív programozás 7. gyakorlat
+
+
+1.
+(a) Tárolja a 3906, short int típusú adatot. Mi lesz az eredmény,
+ha az adat elsõ bájtját unsigned char típusúként olvassuk?
+
+(b) Foglaljon le a heap-en 100 bájtnyi területet. Tároljon a lefoglalt
+területen egy int, double és karaktertömb típusú értéket.
+A program végén szabadítsa fel a használt memóriaterületeket.
+
+2. Olvasson be a billentyûzetrõl egy darabszámot, majd olvasson be ennyi
+darab double típusú adatot. Írja ki a beolvasott értékek átlagát.
+Tárolja az adatokat a heap-en.
+A program végén szabadítsa fel a használt memóriaterületeket.
+
+3. Írjon függvényt, amely paraméterként fogad egy karaktert és darabszámot,
+majd a heap-en elõállítja a kapott darabszámú, csupa ezen karaktereket
+tartalmazó sztringet. A függvény térjen vissza a sztring elsõ elemére
+mutató pointer-rel. Ki szabadítsa fel a lefoglalt területet?
+
+4. Írjon függvényt, amely paraméterként fogad egy egészre mutató pointer-t
+és egy darabszámot, majd visszatér a legnagyobb elem mutatójával.
+Ha nincs legnagyobb elem, a visszatérési érték legyen NULL.
+Hívja meg a függvényt stack-en illetve heap-en tárolt adatokkal is.
+
+5.
+(a) Írjon függvényt, amely paraméterként két darab karaterre mutató
+pointer-t fogad, és az elsõ pointer által címzett sztringet a második
+pointer által címzett területre másolja.
+Hívja meg a függvényt stack-en illetve heap-en tárolt adatokkal is.
+
+(b) Tegye biztonságossá az (a)-ban megírt függvényt úgy, hogy kivédi azt,
+ha a célterület nem elég nagy a forrássztring tárolására.
+
+

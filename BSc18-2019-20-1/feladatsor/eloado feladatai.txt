@@ -1,0 +1,26 @@
+
+
+1. Mi a 8 bites kettes komplemensképzésû ábrázolása a 13-nak?
+
+2. Mi lehet az unsigned int típus értékkészlete?
+
+3. Mi lehet a signed int típus értékkészlete?
+
+4. Írjon le minél több literált, amely a 13-as értéket adja.
+
+5. Írjon programot, amely lefordul de nem linkelõdik.
+
+6. Írjon programot, amely összead két pozitív egész számot és
+eredményül negatív egészet kapunk. Mi a jelenség oka?
+
+7. Írjon programot, amely megmutatja, hogy van olyan f lebegõpontos
+szám, hogy f + 1 == f. Mi a jelenség oka?
+
+8. Írjon programot, amely a következõket tartalmazza és kiírja,
+hogy ":("
+
+a = b = c;
+printf("%s\n", a == b ? ":)" : ":(" );
+
+Mi a jelenség oka?
+
