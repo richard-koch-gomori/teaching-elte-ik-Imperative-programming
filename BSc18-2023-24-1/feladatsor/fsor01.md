@@ -1,6 +1,6 @@
 (Évfolyamszintű Improg feladatsor)
 
-# 1. gyakorlat
+# 1. feladatsor
 
 ## Bevezetés
 
