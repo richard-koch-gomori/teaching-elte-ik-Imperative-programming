@@ -57,4 +57,9 @@ Az órai program (`helloworld.c`) C nyelvű forrásállományában megadjuk, hog
 
 Ha a forrásállományunk nem teljesíti ezeket a szabályokat, akkor fordítási hibát (error) kapunk, és a fordító nem generál futtatható programot.
 
+## Házi feladat (opcionális)
+
+Írjon C programot, amely a képernyő első sorába kiírja a nevét, majd a következő sorba a mai dátumot.
+
+
 
