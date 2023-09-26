@@ -19,7 +19,7 @@ Határozd meg két szám átlagát. Figyelj arra, hogy az eredmény valós szám
 
 ### 3
 
-Írd ki két sorban a *"Hello"* és *"world"* szavakat, egy `printf()` hívással. A két szót tedd idézőjelek közé a kimenetben.
+Írd ki két sorban a *"Hello"* és *"world"* szavakat, egy `printf()` hívással.
 
 ### 4
 
