@@ -1,4 +1,4 @@
-# 1. gyakorlat
+# 2. gyakorlat
 
 ## Fejlesztői környezet az egyetemi laborokban
 
