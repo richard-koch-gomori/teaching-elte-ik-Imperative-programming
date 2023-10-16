@@ -7,8 +7,8 @@ int main()
 
     //printf("ch = %c\n", ch);
 
-    //while(1)
-    while ((ch = getchar()) != EOF )
+    while(1)
+    //while ((ch = getchar()) != EOF )
     {
         ch = getchar();
         

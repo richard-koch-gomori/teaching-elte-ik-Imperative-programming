@@ -10,7 +10,6 @@ int main()
 
     while ((ch = getchar()) != EOF)
     {
-        ch = getchar();
         if (ch == '\n')
         {
             printf("ENTER pressed\n");
