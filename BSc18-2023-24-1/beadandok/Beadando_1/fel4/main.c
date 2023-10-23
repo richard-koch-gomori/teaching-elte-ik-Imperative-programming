@@ -5,7 +5,7 @@ int power(int base, int exponent)
     if (exponent == 0)
         return 1;
 
-    double result = 1.0;
+    int result = 1.0;
 
     for (int i = 0; i < exponent; i++)
     {
