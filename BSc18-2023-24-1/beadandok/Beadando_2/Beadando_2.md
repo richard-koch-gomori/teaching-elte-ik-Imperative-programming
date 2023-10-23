@@ -40,7 +40,7 @@ elem esetén mi a következő szabad index a tömbben. Például, ha a tömb
 
 A `main()` függvényben olvasson be a felhasználótól 5 db. egész számot,
 és szúrja be a tömbbe a fent elmondottak figyelembevételével a megfelelő indexű helyre.
-Ha nem egész számot ír be a felhasználó, írjon ki hibaüzenetet a képernyőre,
+Ha nem pozitív számot ír be a felhasználó, írjon ki hibaüzenetet a képernyőre,
 az adatbeolvasást ne folytassuk és a tömb elemei se íródjanak ki a képernyőre.
 (Azaz lépjen ki a program. Azt nem kell ellenőrizni, hogy a felhasználó
 egész számot írt-e be. Értelemszerűen ha a felhasználó más számokat ír
