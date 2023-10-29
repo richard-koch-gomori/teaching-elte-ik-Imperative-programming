@@ -16,10 +16,23 @@ TODO
 
 igény esetén; email-ben/személyesen lehet egyeztetni konzultációt bármikorra
 
+### 1. konzultáció
+
+október 30 hétfő, 16:00 - 19:00  
+online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
+
 ## zárthelyi dolgozat
 
-nagyzárthelyi dolgozat: november eleje, TODO  
-pótzh: TODO
+### nagyzárthelyi dolgozat
+
+Az Improg ZH ideje (estis):
+
+2023. november 17.  
+ELTE Déli Tömb, Informatikai Kari Nagy Számítógépes Laboratórium (Lovarda), 14:00
+
+### pótzh
+
+TODO
 
 ## beadandók
 
