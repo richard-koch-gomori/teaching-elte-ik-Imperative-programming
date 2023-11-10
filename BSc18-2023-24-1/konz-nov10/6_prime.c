@@ -64,7 +64,7 @@ int main()
 	int primes[MAX_NUMBERS];
 	int size = 0;
 	
-	while (1) // végtelen ciklus
+	while (1) // végtelen ciklus; amikor lehet kerüljük
 	{
 		int num;
 		printf("Enter a number: ");
@@ -81,6 +81,13 @@ int main()
 			// ha nem szerpel
 			if (is_prime(num))
 			{
+				// ha nincs elég hely primes-ben, kilépünk a programból
+				if (size >= MAX_NUMBERS) // 10 db. éppen belefér; gyakorlatilag size == MAX_NUMBERS is jó, size >= MAX_NUMBERS csak egy bolondbiztos megoldás
+				{
+					printf("Error: primes array MAX_NUMBERS size reached\n");
+					return 1; // 1-es return kód jelzi h hibával állunk le
+				}
+
 				// primes-ba betesszük num-ot
 				// primes[0] = 7;
 				primes[size] = num;
@@ -98,4 +105,47 @@ int main()
 
 
 
+
+/*
+Példa működés a MAX_NUMBERS elérésére:
+
+Enter a number: 4
+4 is NOT a prime number
+Enter a number: 5
+5 is a prime number
+Enter a number: 7
+7 is a prime number
+Enter a number: 11
+11 is a prime number
+Enter a number: 13
+13 is a prime number
+Enter a number: 17
+17 is a prime number
+Enter a number: 19
+19 is a prime number
+Enter a number: 23
+23 is a prime number
+Enter a number: 27
+27 is NOT a prime number
+Enter a number: 28
+28 is NOT a prime number
+Enter a number: 29
+29 is a prime number
+Enter a number: 30
+30 is NOT a prime number
+Enter a number: 31
+31 is a prime number
+Enter a number: 32
+32 is NOT a prime number
+Enter a number: 33
+33 is NOT a prime number
+Enter a number: 34
+34 is NOT a prime number
+Enter a number: 35
+35 is NOT a prime number
+Enter a number: 37
+37 is a prime number
+Enter a number: 41
+Error: primes array MAX_NUMBERS size reached
+*/
 
