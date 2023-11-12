@@ -46,8 +46,8 @@ TODO
 
 ## beadandók
 
-4 beadandó: TODO  
-1 nagybeadandó: tél, TODO
+4 beadandó szorgalmi időszakban  
+1 nagybeadandó (évfolyam szintű): tél
 
 
 
