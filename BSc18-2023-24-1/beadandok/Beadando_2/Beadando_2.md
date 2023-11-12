@@ -1,6 +1,6 @@
 # 2. beadandó
 
-## 1. feladat
+## 1. feladat (3.5 pont)
 
 Ebben a feladatban megvalósítunk egy "paritásos tömb"-öt: egészek
 olyan tömbje, ahol a páros számok a tömb elején, a páratlan számok a
@@ -50,18 +50,18 @@ A `PrintParityArray(array, size)` függvény segítségével írja ki a tömb el
 az tömb inicializálása után és mind az 5 db. szám beszúrása után.
 
 
-## 2. feladat
+## 2. feladat (0.5 pont)
 
 Írj programot, amely összeadja egy egészeket tároló tömbben az összes elemet!
 
-## 3. feladat
+## 3. feladat (0.5 pont)
 
 Egészítsd ki a 2-es feladatot úgy, hogy legyen egy extra tömb, amely súlyokat határoz meg az elemekhez, és így számold ki az összeget! 
 > - Pl. Első tömb: [1, 2, 3, 4, 5], második: [1, 1, 2, 3, 5], az összeg: 1\*1+1\*2+2\*3+3\*4+5\*5
 
 A 2., 3. és 4. feladatban a vizsgált tömb lehet beégetett értékeket tartalmazó, `main()`-ben definiált.
 
-## 4. feladat
+## 4. feladat (0.5 pont)
 
 Alakítsd át az előző feladatot úgy, hogy átlagot tudjon számolni! (Tudjon lebegőpontos súlyokkal is számolni.)
 
