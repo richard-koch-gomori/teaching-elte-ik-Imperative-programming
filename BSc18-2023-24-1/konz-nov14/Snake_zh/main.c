@@ -121,7 +121,22 @@ int update_snake(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL],
         return -1;
     }
 
-    
+    // ha nem léptünk le a pályáról
+    // akkor new_head_row new_head_col valid tömb indexek
+    char actual = game[new_head_row][new_head_col];
+    printf("actual = %c\n", actual);
+    if (actual == 'a')
+    {
+        game[new_head_row][new_head_col] = ' ';
+    }
+
+    for (int i = SNAKE_ROW - 1; i > 0; i--)
+    {
+        snake[i][0] = snake[i - 1][0];
+        snake[i][1] = snake[i - 1][1];
+    }
+    snake[0][0] = new_head_row;
+    snake[0][1] = new_head_col;
 }
 
 // nem a feladat része, csak fejlesztés közben használom
@@ -162,6 +177,7 @@ int main()
     char game[ROW][COL];
 
     init_field(game, 10);
+    game[1][0] = 'a';
 
     debug_print(game);
 
@@ -173,15 +189,16 @@ int main()
 
 
     print_game(game, snake);
-    update_snake(game, snake, 'd');
+    update_snake(game, snake, 's');
+    print_game(game, snake);
 }
 
 
 /*
-game:
+game: (snake-kel együtt)
    0 1 2 3 4 5 6 7 8 9
-0. 8 0 0 0 0 0 0 0 0  
-1.     a a  
+0. 0 0 0 0 0 0 0 0   
+1. 8   a a  
 2.       a
 3.
 4.
@@ -208,15 +225,15 @@ game[0][2] == 'k'
 snake (9x2 tömb):
 
    0 1
-0. 0 0   // itt van a kígyó feje, snake[0][0] == 0, snake[0][1] == 0
-1. 0 1
-2. 0 2   // erre a két elemre így tudok hivatkozni: snake[2][0] == 0 és snake[2][1] == 2
-3. 0 3
-4. 0 4
-5. 0 5
-6. 0 6
-7. 0 7
-8. 0 8
+0. 1 0   // itt van a kígyó feje, snake[0][0] == 0, snake[0][1] == 0
+1. 0 0
+2. 0 1   // erre a két elemre így tudok hivatkozni: snake[2][0] == 0 és snake[2][1] == 2
+3. 0 2
+4. 0 3
+5. 0 4
+6. 0 5
+7. 0 6
+8. 0 7
 
 
 
