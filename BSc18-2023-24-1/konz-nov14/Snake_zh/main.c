@@ -59,6 +59,71 @@ void init_snake(int snake[SNAKE_ROW][SNAKE_COL])
     }
 }
 
+void print_game(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL])
+{
+    char copy[ROW][COL];
+    for (int i = 0; i < ROW; i++)
+    {
+        for (int j = 0; j < COL; ++j)
+        {
+            copy[i][j] = game[i][j];
+        }
+    }
+
+    // kígyó feje van a snake 0. sorában
+    copy[snake[0][0]][snake[0][1]] = '8';
+
+    for (int i = 1; i < SNAKE_ROW; ++i)
+    {
+        copy[snake[i][0]][snake[i][1]] = '0';
+    }
+
+    printf("---------------------------\n");
+    for (int i = 0; i < ROW; i++)
+    {
+        for (int j = 0; j < COL; ++j)
+        {
+            printf("%c,", copy[i][j]);
+        }
+        printf("\n");
+    }
+    printf("---------------------------\n");
+}
+
+int update_snake(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL],
+    char ch)
+{
+    int new_head_row = snake[0][0];
+    int new_head_col = snake[0][1];
+    if (ch == 'w')
+    {
+        new_head_row--;
+    }
+    else if (ch == 's')
+    {
+        new_head_row++;
+    }
+    else if (ch == 'a')
+    {
+        new_head_col--;
+    }
+    else if (ch == 'd')
+    {
+        new_head_col++;
+    }
+
+    printf("DEBUG: new_head_row=%d, new_head_col=%d\n", new_head_row, new_head_col);
+
+    if (new_head_row < 0 || new_head_row >= ROW ||
+        new_head_col < 0 || new_head_col >= COL)
+    {
+        printf("DEBUG: kilepett a palyarol\n");
+        return -1;
+    }
+
+    
+}
+
 // nem a feladat része, csak fejlesztés közben használom
 // h lássuk mi van a tömbben
 void debug_print(char game[ROW][COL])
@@ -87,6 +152,8 @@ void debug_snake(int snake[SNAKE_ROW][SNAKE_COL])
     }
 }
 
+
+
 int main()
 {
     srand(time(NULL));
@@ -103,13 +170,17 @@ int main()
     int snake[SNAKE_ROW][SNAKE_COL]; // int snake[9][2];
     init_snake(snake);
     debug_snake(snake);
+
+
+    print_game(game, snake);
+    update_snake(game, snake, 'd');
 }
 
 
 /*
 game:
    0 1 2 3 4 5 6 7 8 9
-0. k k k k k k k k k 0  
+0. 8 0 0 0 0 0 0 0 0  
 1.     a a  
 2.       a
 3.
@@ -118,27 +189,46 @@ game:
 6.
 7.
 8.
-9.
+9. 
+
+copy:
+   0 1 2 ...
+0. k k
+1.
+2.
+...
 
 game[1][2] // 'a' // (1,2)
 game[1][3] // ' ' // (1,3)
 
+game[0][2] == 'k'
 
 
 
-snake:
+snake (9x2 tömb):
 
    0 1
-0. 0 0   // itt van a kígyó feje
+0. 0 0   // itt van a kígyó feje, snake[0][0] == 0, snake[0][1] == 0
 1. 0 1
-2. 0 2
-3.
-4.
-5.
-6.
-7.
-8.
+2. 0 2   // erre a két elemre így tudok hivatkozni: snake[2][0] == 0 és snake[2][1] == 2
+3. 0 3
+4. 0 4
+5. 0 5
+6. 0 6
+7. 0 7
+8. 0 8
 
 
 
 */
+
+/*
+nxn
+
+01234
+1
+2
+3
+4
+*/
+
