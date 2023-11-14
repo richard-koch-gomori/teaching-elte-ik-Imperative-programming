@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+#define ROW 10
+#define COL 20
+
+void init_field(char game[ROW][COL], int init_apple)
+{
+    for (int i = 0; i < ROW; i++)
+    {
+        for (int j = 0; j < COL; ++j)
+        {
+            game[i][j] = ' ';
+        }
+    }
+}
+
+// nem a feladat része, csak fejlesztés közben használom
+// h lássuk mi van a tömbben
+void debug_print(char game[ROW][COL])
+{
+    for (int i = 0; i < ROW; i++)
+    {
+        for (int j = 0; j < COL; ++j)
+        {
+            printf("%c,", game[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    char game[ROW][COL];
+
+    init_field(game, 10);
+
+    debug_print(game);
+}
+
+
+/*
+   0 1 2 3 4 5 6 7 8 9
+0.       a         a  
+1.     a  
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+game[1][2] // 'a'
+game[1][3] // ' '
+
+*/
