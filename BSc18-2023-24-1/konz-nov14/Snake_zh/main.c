@@ -19,7 +19,7 @@ void init_field(char game[ROW][COL], int init_apple)
     }
 
     int count = 0;
-    while (count < 10)
+    while (count < init_apple)
     {
         int row;
         int col;
