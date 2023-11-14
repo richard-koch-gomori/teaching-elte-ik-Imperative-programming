@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h> // rand()
+#include <time.h> // time()
 
 #define ROW 10
 #define COL 20
@@ -12,6 +14,27 @@ void init_field(char game[ROW][COL], int init_apple)
             game[i][j] = ' ';
         }
     }
+
+    int count = 0;
+    while (count < 10)
+    {
+        int row;
+        int col;
+        row = rand() % ROW;
+        col = rand() % COL;
+
+        if (game[row][col] == 'a')
+        {
+            continue;
+        }
+
+        game[row][col] = 'a';
+        count++;
+    }
+
+
+
+
 }
 
 // nem a feladat része, csak fejlesztés közben használom
@@ -30,6 +53,9 @@ void debug_print(char game[ROW][COL])
 
 int main()
 {
+    srand(time(NULL));
+    //printf("%d\n", rand() % 10);
+
     char game[ROW][COL];
 
     init_field(game, 10);
