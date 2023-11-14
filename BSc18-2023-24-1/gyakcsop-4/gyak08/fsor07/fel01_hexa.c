@@ -61,7 +61,8 @@ int ConvertHexToDec(char hex[], int size)
     return res;
 }
 
-
+// 210
+// 45a -> 4 * pow(16, 2) + 5 * pow(16, 1) + 10 * pow(16, 0)
 int main()
 {
     char ch;
