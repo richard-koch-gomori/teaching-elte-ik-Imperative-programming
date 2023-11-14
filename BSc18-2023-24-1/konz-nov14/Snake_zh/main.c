@@ -93,6 +93,8 @@ void print_game(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL])
 int update_snake(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL],
     char ch)
 {
+    int result = 0;
+
     int new_head_row = snake[0][0];
     int new_head_col = snake[0][1];
     if (ch == 'w')
@@ -125,18 +127,37 @@ int update_snake(char game[ROW][COL], int snake[SNAKE_ROW][SNAKE_COL],
     // akkor new_head_row new_head_col valid tömb indexek
     char actual = game[new_head_row][new_head_col];
     printf("actual = %c\n", actual);
+    // ha almát találtunk
     if (actual == 'a')
     {
         game[new_head_row][new_head_col] = ' ';
+        result = 1;
+    }
+    else
+    {
+        result = 0;
     }
 
+    // a kígyó nem fej szegmenseinek shftelése
     for (int i = SNAKE_ROW - 1; i > 0; i--)
     {
         snake[i][0] = snake[i - 1][0];
         snake[i][1] = snake[i - 1][1];
     }
+    // kígyó új feje
     snake[0][0] = new_head_row;
     snake[0][1] = new_head_col;
+
+    // kígyó önmagába lépett-e
+    for (int i = 1; i < SNAKE_ROW; i++)
+    {
+        if (snake[i][0] == snake[0][0] && snake[i][1] == snake[0][1])
+        {
+            return -2;
+        }
+    }
+
+    return result;
 }
 
 // nem a feladat része, csak fejlesztés közben használom
@@ -173,7 +194,7 @@ int main()
 {
     srand(time(NULL));
     //printf("%d\n", rand() % 10);
-
+    /*
     char game[ROW][COL];
 
     init_field(game, 10);
@@ -191,6 +212,45 @@ int main()
     print_game(game, snake);
     update_snake(game, snake, 's');
     print_game(game, snake);
+    */
+
+    char game[ROW][COL];
+    init_field(game, 10);
+
+    int snake[SNAKE_ROW][SNAKE_COL];
+    init_snake(snake);
+
+    print_game(game, snake);
+
+    int db = 10;
+
+    char ch;
+    while ((ch = getchar()) != EOF)
+    {
+        printf("Pressed char: %c\n", ch);
+        if (ch == 'w' || ch == 's' || ch == 'a' || ch == 'd')
+        {
+            int res = update_snake(game, snake, ch);
+            if (res == -1 || res == -2)
+            {
+                return 1;
+            }
+            if (res == 1)
+            {
+                db--;
+            }
+            if (db == 0)
+            {
+                printf("Grat\n");
+                return 0;
+            }
+            print_game(game, snake);
+        }
+        if (ch == '\n')
+        {
+            continue;
+        }
+    }
 }
 
 
