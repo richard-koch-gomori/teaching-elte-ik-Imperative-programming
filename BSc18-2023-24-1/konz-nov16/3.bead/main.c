@@ -68,6 +68,23 @@ void submit(int table[SIZE][SIZE], char col_ch, int row, int ship_len, char orie
     
         printf("row_idx: %d\n", row_idx);
         printf("col_idx: %d\n", col_idx);
+
+        for (int i = 0; i < ship_len; ++i)
+        {
+            printf("i = %d\n", i);
+
+            // azt szeretnénk h ez történjen : submit(table, 'C', 4, 3, '|');
+            /*
+            table[3][2] = 1;
+            table[4][2] = 1;
+            table[5][2] = 1;
+            */
+
+
+            table[row_idx + i][col_idx] = 1;
+            table[row_idx + i][col_idx] = 1;
+            table[row_idx + i][col_idx] = 1;
+        }
     }
     else // vízszintesen
     {
@@ -83,7 +100,7 @@ int main()
     init(table);
     printTable(table);
     submit(table, 'C', 4, 3, '|'); // TODO num of ship
-    submit(table, 'I', 2, 3, '|'); // TODO num of ship
+    //submit(table, 'I', 2, 3, '|'); // TODO num of ship
 }
 
 
@@ -104,12 +121,12 @@ int main()
 // table mátrix:
 /*
  0 1 2 3 4 5 6 7 8 9
-0
-1
-2
+0              1
+1              1
+2              1
 3    1
-4
-5
+4    1
+5    1
 6
 7
 8
