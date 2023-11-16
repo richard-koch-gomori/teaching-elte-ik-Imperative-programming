@@ -58,6 +58,9 @@ int convert_to_idx(char col_ch)
 
 void submit(int table[SIZE][SIZE], char col_ch, int row, int ship_len, char orientation)
 {
+    int row_idx = row - 1; // 0-tól kezdődik
+    int col_idx = convert_to_idx(col_ch); // 0-tól kezdődik ; 'C' -> 3
+
     if (orientation == '|') // függőleges
     {
         printf("col_ch: %c\n", col_ch); // col A-tól kezdődik
@@ -82,13 +85,14 @@ void submit(int table[SIZE][SIZE], char col_ch, int row, int ship_len, char orie
 
 
             table[row_idx + i][col_idx] = 1;
-            table[row_idx + i][col_idx] = 1;
-            table[row_idx + i][col_idx] = 1;
         }
     }
     else // vízszintesen
     {
-
+        for (int i = 0; i < ship_len; ++i)
+        {
+            table[row_idx][col_idx + i] = 1;
+        }
     }
 }
 
@@ -100,18 +104,20 @@ int main()
     init(table);
     printTable(table);
     submit(table, 'C', 4, 3, '|'); // TODO num of ship
-    //submit(table, 'I', 2, 3, '|'); // TODO num of ship
+    printTable(table);
+    submit(table, 'D', 1, 4, '_'); // TODO num of ship
+    printTable(table);
 }
 
 
 // játék:
 /* A B C D E F G H I J
-1  
+1        1 1 1 1
 2  
 3  
 4      1
-5
-6    
+5      1
+6      1
 7
 8
 9
@@ -121,9 +127,9 @@ int main()
 // table mátrix:
 /*
  0 1 2 3 4 5 6 7 8 9
-0              1
-1              1
-2              1
+0      1 1 1 1  
+1              
+2              
 3    1
 4    1
 5    1
