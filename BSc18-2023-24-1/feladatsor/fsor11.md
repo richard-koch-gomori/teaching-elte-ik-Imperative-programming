@@ -1,9 +1,5 @@
 (Évfolyamszintű Improg feladatsor)
 
-2022/23 évi ZH feladatsor
-
-mintazh
-
 # 11. feladatsor
 
 ## Stringek, Fájlok
