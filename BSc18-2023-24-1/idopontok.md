@@ -31,6 +31,11 @@ online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
 november 14 kedd, 18:00 - 21:00  
 online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
 
+### 4. konzultáció
+
+november 16 csütörtök, 18:00 - 21:00  
+online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
+
 ## zárthelyi dolgozat
 
 ### nagyzárthelyi dolgozat
@@ -42,12 +47,16 @@ ELTE Déli Tömb, Informatikai Kari Nagy Számítógépes Laboratórium (Lovarda
 
 ### pótzh
 
-TODO
+2023. december 1.  
+ELTE Déli Tömb, Informatikai Kari Nagy Számítógépes Laboratórium (Lovarda), 15:00
 
 ## beadandók
 
-4 beadandó szorgalmi időszakban  
-1 nagybeadandó (évfolyam szintű): tél
+### 4 beadandó szorgalmi időszakban, Canvas-ben elérhetőek
 
+
+### 1 nagybeadandó (évfolyam szintű)
+
+A beadandó feladat kiírását 2023. december 11. (00:00)-ra tervezzük és 2024. január 2. (24:00)-ig lenne a határidő.
 
 
