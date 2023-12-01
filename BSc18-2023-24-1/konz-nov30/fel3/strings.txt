@@ -1,0 +1,6 @@
+Hello world
+This is an english sentence
+Absolulte value
+cryptography
+discrete math 2
+C programming language

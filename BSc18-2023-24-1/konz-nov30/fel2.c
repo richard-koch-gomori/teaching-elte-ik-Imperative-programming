@@ -1,4 +1,4 @@
-// 11sor/5. feladat
+// 11sor/6. feladat
 
 #include <stdio.h>
 #include <string.h>
@@ -41,9 +41,9 @@ int main(int argc, char* argv[])
 
     //printf("%c\n", 'C' + ('a' - 'A'));
 
-    if (argc < 2)
+    if (argc < 3)
     {
-        printf("Usage: a.out [filename]\n");
+        printf("Usage: a.out [input] [output]\n");
         return 1;
     }
     printf("The value of argv[1]: %s\n", argv[1]);
@@ -53,15 +53,25 @@ int main(int argc, char* argv[])
         printf("Unable to open file: %s\n", argv[1]);
         return 2;
     }
+
+    FILE* output = fopen(argv[2], "w");
+    if (output == NULL)
+    {
+        printf("Unable to open file: %s\n", argv[2]);
+        return 2;
+    }
+
     char line[ARRAY_SIZE];
     while (fgets(line, ARRAY_SIZE, textfile) != NULL)
     {
-        line[strlen(line) - 1] = '\0';
+        //line[strlen(line) - 1] = '\0';
         //printf("line = %s\n", line);
         conv(line, array);
-        printf("array = %s\n", array);
+        //printf("array = %s\n", array);
+        fputs(array, output);
     }
     fclose(textfile);
+    fclose(output);
 
     return 0;
 }
