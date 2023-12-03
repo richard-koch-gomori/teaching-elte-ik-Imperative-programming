@@ -38,7 +38,7 @@ online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
 
 ### 5. konzultáció
 
-november 30 csütörtök, 19:00 - 20:00  
+november 30 csütörtök, 19:00 - 21:00  
 online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport
 
 ## zárthelyi dolgozat
