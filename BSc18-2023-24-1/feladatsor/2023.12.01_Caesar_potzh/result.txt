@@ -1,0 +1,38 @@
+a: 4
+b: 5
+c: 6
+d: 0
+e: 70
+f: 7
+g: 21
+h: 23
+i: 81
+j: 15
+k: 12
+l: 15
+m: 58
+n: 3
+o: 5
+p: 42
+q: 13
+r: 59
+s: 41
+t: 23
+u: 0
+v: 52
+w: 51
+x: 63
+y: 20
+z: 7
+Most freq cipher: i
+calculated_key = 4
+a c program need not all be translated at the same time. the text of the program is kept
+in units called source files, (or preprocessing files) in this international standard. a
+source file together with all the headers and source files included via the preprocessing
+directive #include is known as a preprocessing translation unit. after preprocessing, a
+preprocessing translation unit is called a translation unit. previously translated translation
+units may be preserved individually or in libraries. the separate translation units of a
+program communicate by (for example) calls to functions whose identifiers have external
+linkage, manipulation of objects whose identifiers have external linkage, or manipulation
+of data files. translation units may be separately translated and then later linked to
+produce an executable program.
