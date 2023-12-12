@@ -66,7 +66,7 @@ A beadandó feladat kiírását 2023. december 11. (00:00)-ra tervezzük és 202
 
 ## utolsó gyakorlat
 
-- 2023. december 11-i utolsó gyakorlat nem a szokásos hétfői időpontban lesz megtartva,  
+2023. december 11-i utolsó gyakorlat nem a szokásos hétfői időpontban lesz megtartva,  
 hanem 2023. december 12-én kedden 16:45-17:30 között csak online "2023/24/1 Imperatív programozás 3-4. gyak esti" Teams csoport (mind a 3-as és 4-es csoportomnak egyszerre)
 
 
