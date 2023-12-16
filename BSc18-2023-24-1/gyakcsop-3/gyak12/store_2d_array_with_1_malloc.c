@@ -19,6 +19,13 @@ int main()
         }
     }
 
+    // a szokásos 2dimenziós indexelés működik
+    int index;
+    index = 1 * COL + 3;
+    d2array[index] = 4;
+    index = 0 * COL + 4;
+    d2array[index] = -10;
+
     printf("the dynamic 2D array:\n");
     for (int i = 0; i < ROW; ++i)
     {
