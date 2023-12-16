@@ -10,7 +10,7 @@ hétfőnként, 16:45-17:30, Déli Tömb 00-410 (PC 1) terem
 
 ## előadás
 
-TODO
+ld. EA Canvas
 
 ## konzultáció
 

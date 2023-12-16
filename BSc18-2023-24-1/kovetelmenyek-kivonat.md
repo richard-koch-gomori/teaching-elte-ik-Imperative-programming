@@ -1,6 +1,4 @@
-# Követelmények a tárgy Canvas honlapján:
-
-TODO
+# Követelmények a tárgy Canvas honlapján
 
 (estis csoport)
 
