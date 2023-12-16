@@ -23,7 +23,7 @@ majd olvassa be a felhasználótól a személyek adatait, tárolja a lefoglalt d
 ## 1 pont
 
 Ha minden beolvasás sikeres, próbáljuk ki a `get_younger_marriage()` függvényt, és jelenítsük meg
-a képernyőn a legfiatalabb személy adatait, majd szabadítsuk fel a dinamikus memóriát.
+a képernyőn a legfiatalabb házas személy adatait, majd szabadítsuk fel a dinamikus memóriát.
 
 
 
